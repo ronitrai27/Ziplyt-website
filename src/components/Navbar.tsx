@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import Link from "next/link";
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,9 +28,9 @@ const Navbar = () => {
 
   return (
     <header
-      className={`z-50 top-0 transition-all duration-300 ${
+      className={`z-50 top-0 left-1/2 -translate-x-1/2 transition-all duration-300 ${
         isSticky
-          ? "fixed left-1/2 -translate-x-1/2 bg-white/30 backdrop-blur-md my-6 shadow-md py-3 px-4 w-[80%] rounded-xl"
+          ? "fixed bg-white/30 backdrop-blur-md my-6 shadow-md py-3 px-4 w-[80%] rounded-xl"
           : "relative bg-transparent py-3 px-5 w-full"
       }`}
     >
@@ -46,17 +46,17 @@ const Navbar = () => {
 
         {/* NAV LINKS (Desktop) */}
         <nav className="hidden min-[820px]:inline-flex gap-6 items-center font-inter text-[17px] font-light tracking-tight text-light">
-          <a href="#" className="hover:text-deep">
+          <Link href="/reachus" className="hover:text-deep">
             reach us
-          </a>
+          </Link>
           <span className="w-2 h-2 bg-deep rounded-full"></span>
-          <a href="#" className="hover:text-deep">
+          <Link href="/workwithus" className="hover:text-deep">
             careers
-          </a>
+          </Link>
           <span className="w-2 h-2 bg-deep rounded-full"></span>
-          <a href="#" className="hover:text-deep">
+          <Link href="/about" className="hover:text-deep">
             about company
-          </a>
+          </Link>
         </nav>
 
         {/* CTA + Mobile Menu Button */}
@@ -75,6 +75,7 @@ const Navbar = () => {
           <button
             onClick={() => setIsMenuOpen(true)}
             className="min-[820px]:hidden text-deep"
+            aria-label="Open menu"
           >
             <Menu size={28} />
           </button>
@@ -94,6 +95,7 @@ const Navbar = () => {
             <button
               onClick={() => setIsMenuOpen(false)}
               className="self-end mb-4 text-primary-blue"
+              aria-label="close menu"
             >
               <X size={28} />
             </button>

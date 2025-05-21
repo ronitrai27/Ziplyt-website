@@ -1,12 +1,12 @@
 "use client";
-
+import Image from "next/image";
 import React, { useState } from "react";
 import {
-  motion,
-  useTransform,
-  AnimatePresence,
+  // motion,
+  // useTransform,
+  // AnimatePresence,
   useMotionValue,
-  useSpring,
+  // useSpring,
 } from "motion/react";
 
 export const AnimatedTooltip = ({
@@ -19,19 +19,20 @@ export const AnimatedTooltip = ({
     image: string;
   }[];
 }) => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const springConfig = { stiffness: 100, damping: 5 };
+  const [, setHoveredIndex] = useState<number | null>(null);
+  // const springConfig = { stiffness: 100, damping: 5 };
   const x = useMotionValue(0); // going to set this value on mouse move
   // rotate the tooltip
-  const rotate = useSpring(
-    useTransform(x, [-100, 100], [-45, 45]),
-    springConfig
-  );
+  // const rotate = useSpring(
+  //   useTransform(x, [-100, 100], [-45, 45]),
+  //   springConfig
+  // );
   // translate the tooltip
-  const translateX = useSpring(
-    useTransform(x, [-100, 100], [-50, 50]),
-    springConfig
-  );
+  // const translateX = useSpring(
+  //   useTransform(x, [-100, 100], [-50, 50]),
+  //   springConfig
+  // );
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleMouseMove = (event: any) => {
     const halfWidth = event.target.offsetWidth / 2;
     x.set(event.nativeEvent.offsetX - halfWidth); // set the x value, which is then used in transform and rotate
@@ -39,14 +40,14 @@ export const AnimatedTooltip = ({
 
   return (
     <>
-      {items.map((item, idx) => (
+      {items.map((item) => (
         <div
           className="group relative -mr-4"
           key={item.name}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          <AnimatePresence mode="popLayout">
+          {/* <AnimatePresence mode="popLayout">
             {hoveredIndex === item.id && (
               <motion.div
                 initial={{ opacity: 0, y: 20, scale: 0.6 }}
@@ -76,13 +77,14 @@ export const AnimatedTooltip = ({
                 <div className="text-xs text-white">{item.designation}</div>
               </motion.div>
             )}
-          </AnimatePresence>
-          <img
+          </AnimatePresence> */}
+          <Image
             onMouseMove={handleMouseMove}
             height={100}
             width={100}
             src={item.image}
             alt={item.name}
+            unoptimized // Remove this line if you're using images from the /public folder
             className="relative !m-0 h-12 w-12 rounded-full border-2 border-white object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105"
           />
         </div>

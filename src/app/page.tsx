@@ -1,10 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import LogoTicker from "@/components/LogoTicker";
-import Features from "@/components/Features";
 import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonial";
 import Footer from "@/components/Footer";
+import Feature from "@/components/Feature";
+import Wavy from "@/components/Wavy";
 export default function Home() {
   return (
     <div className="relative overflow-hidden">
@@ -24,7 +25,8 @@ export default function Home() {
       <Hero />
       <div className="hidden min-[1000px]:block min-[1000px]:absolute -z-10 top-0 right-44 w-[12rem] h-[40rem] bg-primary-blue rounded-b-full"></div>
       <LogoTicker />
-      <Features />
+      <Feature />
+      <Wavy />
       <Services />
       <Testimonial />
       <Footer />

@@ -2,10 +2,10 @@ import React from "react";
 import { MarqueeDemoVertical } from "@/lib/marqueDemo";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
-import { LuCheck } from "react-icons/lu";
+// import { LuCheck } from "react-icons/lu";
 const Testimonial = () => {
   return (
-    <section className="w-full max-h-screen my-10 px-12">
+    <section className="w-full my-10 px-12">
       <div className=" flex min-[700px]:flex-row flex-col items-center justify-between gap-5">
         {/* LEFT SIDE */}
         <main className="relative w-full h-[380px] min-[1000px]:h-[500px] flex flex-col gap-3 items-center justify-center  overflow-hidden">
@@ -27,9 +27,7 @@ const Testimonial = () => {
           />
         </main>
         {/* RIGHT SIDE */}
-        <div>
-          <MarqueeDemoVertical />
-        </div>
+        <MarqueeDemoVertical />
       </div>
     </section>
   );

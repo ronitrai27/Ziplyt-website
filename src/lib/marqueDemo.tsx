@@ -53,7 +53,6 @@ const secondRow = reviews.slice(reviews.length / 2);
 const ReviewCard = ({
   img,
   name,
-  username,
   body,
 }: {
   img: string;
@@ -85,7 +84,7 @@ const ReviewCard = ({
 
 export function MarqueeDemoVertical() {
   return (
-    <div className="relative flex h-[500px] w-full flex-row items-center justify-center overflow-hidden">
+    <div className="relative h-[500px] flex w-full flex-row items-center justify-center overflow-hidden mb-auto">
       <Marquee pauseOnHover vertical className="[--duration:20s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
