@@ -2,8 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
-// import { ShimmerButton } from "@/components/magicui/shimmer-button";
-// import { LuChevronRight } from "react-icons/lu";
 import AppDownload from "@/lib/app-download";
 import { SparklesCore } from "./ui/sparkels";
 import { BiSolidQuoteSingleLeft } from "react-icons/bi";
