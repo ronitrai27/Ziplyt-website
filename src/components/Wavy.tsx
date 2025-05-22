@@ -10,9 +10,9 @@ const Wavy = () => {
       </div>
 
       {/* Text Content */}
-      <div className="max-[500px]:hidden flex justify-between items-center h-full px-6 min-[800px]:px-20 text-white font-inter text-[15px] font-light tracking-tight">
+      <div className="max-[500px]:hidden flex justify-between items-center h-full px-6 min-[800px]:px-20 text-white font-poppins text-[16px] font-medium tracking-tight">
         {/* Left Text */}
-        <p className="w-[30%] min-w-[140px] text-left leading-tight">
+        <p className="w-[30%] min-w-[140px] text-left leading-tight ">
           Empowering homes with instant expert help.
         </p>
 

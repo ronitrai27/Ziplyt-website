@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import { ShieldCheck, AlarmClock, Banknote } from "lucide-react";
 import { WobbleCard } from "@/components/ui/wobble-card";
 const Feature = () => {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   const leftVariants = {
     hidden: { x: -100, opacity: 0 },
@@ -63,7 +63,7 @@ const Feature = () => {
           >
             <WobbleCard containerClassName=" bg-primary-blue min-h-[240px] max-h-[360px]">
               <h1 className="text-[24px]  text-balance font-medium font-inter tracking-tight text-white">
-                Every Worker, Vetted & Trusted
+                Transparency
               </h1>
               <div className="flex items-center h-full gap-5 py-3">
                 <div className="self-start">
@@ -101,9 +101,8 @@ const Feature = () => {
                 <h1 className="text-[28px] tracking-[-0.015em] text-white font-poppins font-bold">
                   Book More, Save Big with Coins
                 </h1>
-                <p className=" text-[14px] text-white/80 font-poppins mt-2 tracking-tighter">
-                  Earn coins with every booking to unlock massive discounts—the
-                  more you book, the more you save!
+                <p className=" text-[18px] text-white/80 font-poppins mt-2 tracking-tighter">
+                  Earn Zipcoins to avail huge dicounts on booking.
                 </p>
               </div>
             </WobbleCard>
@@ -117,7 +116,7 @@ const Feature = () => {
             className="w-full max-[799px]:hidden "
           >
             <h3 className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-inter text-[18px] tracking-tighter font-light uppercase mb-1">
-              Book More, Save Big with Coins
+              Book More, Save Big with ZipCoins
             </h3>
             <div className=" flex items-center gap-3">
               <div className="w-8 h-8 flex items-center justify-center self-start">

@@ -2,9 +2,9 @@ import { Card } from "@/components/ui/card";
 
 export default function AppDownload() {
   return (
-    <Card className="px-2 py-2 max-w-md mx-auto bg-white  shadow-md relative overflow-hidden border border-slate-200 ">
+    <Card className="px-4 py-3 max-w-md mx-auto bg-white  shadow-md relative overflow-hidden border border-slate-200 ">
       {/* Grid background pattern */}
-      <div className="absolute inset-0 bg-grid-slate-100 dark:bg-grid-slate-800 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))] dark:[mask-image:linear-gradient(0deg,#000,rgba(0,0,0,0.6))]"></div>
+      <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))] "></div>
 
       <div className="relative z-10">
         <div className="text-center">
