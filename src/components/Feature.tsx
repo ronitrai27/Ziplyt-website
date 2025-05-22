@@ -1,189 +1,86 @@
-"use client";
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { ShieldCheck, AlarmClock, Banknote } from "lucide-react";
 import { WobbleCard } from "@/components/ui/wobble-card";
 const Feature = () => {
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
-
-  const leftVariants = {
-    hidden: { x: -100, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: { duration: 0.4, ease: "easeOut" },
-    },
-  };
-
-  const rightVariants = {
-    hidden: { x: 100, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: { duration: 0.4, ease: "easeOut" },
-    },
-  };
   return (
-    <section className="bg-white relative mt-10 px-8">
-      <main className=" flex flex-col gap-10">
-        {/* 1ST FEATURE  */}
-        <div
-          className="flex min-[800px]:flex-row flex-col items-center gap-6"
-          ref={ref}
-        >
-          {/* left */}
-          <motion.div
-            variants={leftVariants}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            className="w-full max-[799px]:hidden "
-          >
-            <h3 className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-inter text-[18px] tracking-tighter font-light mb-1">
-              UNMATCHED TRANSPARENCY
-            </h3>
-            <div className=" flex items-center gap-3">
-              <div className="w-8 h-8 flex items-center justify-center self-start">
-                <ShieldCheck size={24} className="text-primary-blue" />
-              </div>
-              <h1 className="text-[26px] font-poppins tracking-tight font-medium text-balance text-deep leading-snug">
-                Choose workers confidently. See their experience, pricing, and
-                reviews. Know exactly who you’re hiring.
-              </h1>
-            </div>
-          </motion.div>
-
-          {/* RIGHT  */}
-          <motion.div
-            variants={rightVariants}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            className=" min-[1000px]:w-1/2 flex justify-center"
-          >
-            <WobbleCard containerClassName=" bg-primary-blue min-h-[240px] max-h-[360px]">
-              <h1 className="text-[24px]  text-balance font-medium font-inter tracking-tight text-white">
-                Transparency
-              </h1>
-              <div className="flex items-center h-full gap-5 py-3">
-                <div className="self-start">
-                  <p className="text-[18px] text-gray-300 font-inter mt-2">
-                    Background-checked, skilled professionals you can rely on,
-                    every time.
-                  </p>
+    <section className="container py-4 px-4 min-[1000px]:mt-10">
+      <main>
+        <h4 className="text-center font-inter tracking-tighter font-light text-light">
+          WHY CHOOSE US ?
+        </h4>
+        <h1 className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-poppins text-[42px] font-medium text-center tracking-tighter text-balance leading-snug mb-8">
+          Service You Deserve, Speed You Love
+        </h1>
+        {/* 3 BOXES */}
+        <div className="flex justify-center py-6 pl-4 mb-8">
+          <div className="grid grid-cols-1 min-[799px]:grid-cols-3 gap-8 items-stretch justify-center">
+            {[...Array(3)].map((_, i) => (
+              <div
+                key={i}
+                className="w-full max-w-[22rem] h-full flex flex-col"
+              >
+                <div className="w-8 h-8 flex items-center justify-center rounded-lg bg-gray-200 mb-2">
+                  {i === 0 && (
+                    <ShieldCheck size={18} className="text-primary-blue" />
+                  )}
+                  {i === 1 && (
+                    <Banknote size={18} className="text-primary-blue" />
+                  )}
+                  {i === 2 && (
+                    <AlarmClock size={18} className="text-primary-blue" />
+                  )}
                 </div>
-                <Image
-                  src="/shield.png"
-                  alt="Ziplyt app showing worker profile"
-                  width={90}
-                  height={90}
-                  className="object-cover"
-                />
-              </div>
-            </WobbleCard>
-          </motion.div>
-        </div>
-
-        {/* 2ND FEATURE */}
-        <div
-          className="flex min-[800px]:flex-row flex-col items-center gap-6 "
-          ref={ref}
-        >
-          {/* RIGHT  */}
-          <motion.div
-            variants={rightVariants}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            className="w-full min-[1000px]:w-1/2 flex justify-center"
-          >
-            <WobbleCard containerClassName=" min-h-[240px] max-h-[360px] bg-indigo-500">
-              <div>
-                <h1 className="text-[28px] tracking-[-0.015em] text-white font-poppins font-bold">
-                  Book More, Save Big with Coins
-                </h1>
-                <p className=" text-[18px] text-white/80 font-poppins mt-2 tracking-tighter">
-                  Earn Zipcoins to avail huge dicounts on booking.
+                <h3 className="text-deep font-inter text-[18px] tracking-tighter font-light mb-1 whitespace-nowrap overflow-hidden text-ellipsis">
+                  {i === 0 && "UNMATCHED TRANSPARENCY"}
+                  {i === 1 && "VERIFIED WORKERS"}
+                  {i === 2 && "SAVE WITH ZIPCOINS"}
+                </h3>
+                <p className="text-[16px] text-light tracking-tight text-balance font-inter flex-grow">
+                  {i === 0 &&
+                    "Choose workers confidently. See their experience, pricing, and reviews. Know exactly who you’re hiring."}
+                  {i === 1 &&
+                    "Every service provider is background-checked and verified to ensure top-quality service delivery."}
+                  {i === 2 &&
+                    "Book services in just a few taps — no hassle, no delays. Get help when you need it."}
                 </p>
               </div>
-            </WobbleCard>
-          </motion.div>
-
-          {/* LEFT  */}
-          <motion.div
-            variants={leftVariants}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            className="w-full max-[799px]:hidden "
-          >
-            <h3 className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-inter text-[18px] tracking-tighter font-light uppercase mb-1">
-              Book More, Save Big with ZipCoins
-            </h3>
-            <div className=" flex items-center gap-3">
-              <div className="w-8 h-8 flex items-center justify-center self-start">
-                <Banknote size={24} className="text-primary-blue" />
-              </div>
-              <h1 className="text-[26px] font-poppins tracking-tight font-medium text-balance text-deep leading-snug">
-                Earn coins with every booking to unlock massive discounts—the
-                more you book, the more you save!
-              </h1>
-            </div>
-          </motion.div>
+            ))}
+          </div>
         </div>
 
-        {/* 3RD FEATURE */}
-        <div
-          className="flex min-[800px]:flex-row flex-col items-center gap-6 "
-          ref={ref}
-        >
-          {/* left */}
-          <motion.div
-            variants={leftVariants}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            className="w-full max-[799px]:hidden  "
-          >
-            <h3 className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-inter text-[18px] tracking-tighter font-light mb-1">
-              LIGHTNING-FAST SERVICE
-            </h3>
-            <div className=" flex items-center gap-3">
-              <div className="w-8 h-8 flex items-center justify-center self-start">
-                <AlarmClock size={24} className="text-primary-blue" />
-              </div>
-              <h1 className="text-[26px] font-poppins tracking-tight font-medium text-balance text-deep leading-snug">
-                Book instantly and get assistance in under 10 minutes — no more
-                endless waiting, no more uncertainty.
-              </h1>
-            </div>
-          </motion.div>
+        {/*  WOMAN */}
+        <div className="flex min-[820px]:flex-row flex-col items-center gap-5 px-8">
+          {/* image */}
+          <div className="relative">
+            <div className="bg-primary-blue w-[20rem] h-[20rem] rounded-3xl feature-shadow"></div>
+            <Image
+              src="/woman.jpg"
+              alt="woman"
+              width={300}
+              height={300}
+              className="absolute top-10 right-10 object-cover rounded-lg "
+            />
+          </div>
+          {/* text */}
+          <div></div>
+        </div>
 
-          {/* RIGHT  */}
-          <motion.div
-            variants={rightVariants}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            className=" min-[1000px]:w-1/2 flex justify-center"
-          >
-            <WobbleCard containerClassName="bg-blue-900 min-h-[240px] max-h-[360px]">
-              <h1 className="text-[24px]  text-balance font-medium font-inter tracking-tight text-white">
-                INSTANT BOOKING
-              </h1>
-              <div className="flex items-center h-full gap-5 py-3">
-                <div className="self-start">
-                  <p className="text-[18px] text-gray-300 font-inter mt-2">
-                    From tap leaks to AC malfunctions, help is just minutes
-                    away. Our nearest expert is on the move.
-                  </p>
-                </div>
-                <Image
-                  src="/fast-forward.png"
-                  alt="Ziplyt app showing worker profile"
-                  width={70}
-                  height={70}
-                  className="object-cover self-end"
-                />
-              </div>
-            </WobbleCard>
-          </motion.div>
+        {/* WORKER */}
+        <div className="flex min-[820px]:flex-row flex-col items-center gap-5 px-8">
+          {/* TEXT */}
+          <div className="w-full"></div>
+          {/* Image */}
+          <div className="relative">
+            <div className="bg-primary-blue w-[20rem] h-[20rem] rounded-3xl feature-shadow"></div>
+            <Image
+              src="/painter.jpg"
+              alt="woman"
+              width={300}
+              height={300}
+              className="absolute top-10 left-10 object-cover rounded-lg "
+            />
+          </div>
         </div>
       </main>
     </section>
@@ -191,4 +88,3 @@ const Feature = () => {
 };
 
 export default Feature;
-// max-[1000px]:w-1/2 flex justify-center

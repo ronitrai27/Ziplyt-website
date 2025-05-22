@@ -44,6 +44,12 @@
 box-shadow: 1px 30px 58px -32px rgba(16, 62, 158, 0.45);
   }
 
+  .feature-shadow{
+    -webkit-box-shadow: 18px -9px 30px -24px rgba(66, 68, 90, 1);
+-moz-box-shadow: 18px -9px 30px -24px rgba(66, 68, 90, 1);
+box-shadow: 18px -9px 30px -24px rgba(66, 68, 90, 1);
+  }
+
   /* marquee chnaged to tickermarquee */
 @keyframes tickermarquee {
   0% {
@@ -385,4 +391,39 @@ box-shadow: 1px 30px 58px -32px rgba(16, 62, 158, 0.45);
 
   }
 
+}
+@utility container{
+  @apply max-w-7xl mx-auto px-8;
+}
+/* Custom styles for Ziplyt */
+.ziplyt-gradient {
+  background: linear-gradient(135deg, #0050e0 0%, #0036b3 100%);
+}
+
+.ziplyt-input {
+  @apply w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200;
+}
+
+.ziplyt-button {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md;
+}
+
+.ziplyt-card {
+  @apply bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-200;
+}
+
+.ziplyt-section {
+  @apply py-16 md:py-24;
+}
+
+.ziplyt-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.ziplyt-heading {
+  @apply text-3xl md:text-4xl font-bold text-gray-900;
+}
+
+.ziplyt-subheading {
+  @apply text-lg text-gray-600 mt-2;
 }

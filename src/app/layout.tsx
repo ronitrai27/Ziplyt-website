@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Roboto, Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 // Configure fonts
 const openSans = Open_Sans({
@@ -72,7 +74,9 @@ export default function RootLayout({
       <body
         className={`${openSans.variable} ${inter.variable} ${roboto.variable} ${poppins.variable} antialiased`}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

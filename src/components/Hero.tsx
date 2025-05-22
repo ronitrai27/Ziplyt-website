@@ -2,10 +2,9 @@
 import React from "react";
 import Image from "next/image";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
-import AppDownload from "@/lib/app-download";
-import { SparklesCore } from "./ui/sparkels";
+// import AppDownload from "@/lib/app-download";
+// import { SparklesCore } from "./ui/sparkels";
 import { BiSolidQuoteSingleLeft } from "react-icons/bi";
-import { LuCheck } from "react-icons/lu";
 const Hero = () => {
   // ANIMATED TOOLTIP ->
   const people = [
@@ -48,26 +47,12 @@ const Hero = () => {
   ];
   // min-h-[93vh]
   return (
-    <section className="min-h-[93vh] w-full min-[1024]:py-6 min-[820]:py-4 py-3 px-4 min-[1200px]:px-8">
+    <section className="min-h-[93vh] w-full min-[1024]:py-6 min-[820]:py-4 py-3 px-4 min-[1200px]:px-8 container">
       <div className="flex flex-col min-[1000px]:flex-row gap-4">
         {/* LEFT CONTENT */}
         <div className="min-[1000px]:w-[55%] w-full">
-          {/* small ad */}
-          <div className="border border-light px-5 py-2 rounded-lg w-fit mx-auto mt-3">
-            <h1 className="font-inter text-[16px] font-medium tracking-tight bg-[linear-gradient(to_right,#005EFF,#202E47)] text-transparent bg-clip-text [-webkit-background-clip:text] ">
-              Avail huge discounts now
-            </h1>
-          </div>
-          <SparklesCore
-            background="transparent"
-            minSize={0.4}
-            maxSize={1}
-            particleDensity={1200}
-            className="w-[200px] h-[40px] mx-auto -mt-5"
-            particleColor="#005EFF"
-          />
           {/* MAIN HEAD + slogan */}
-          <div className="mt-8 min-[1024]:px-2 text-deep">
+          <div className="mt-12 min-[1024]:px-2 text-deep">
             <h1 className="font-poppins text-[40px] min-[1200px]:text-[46px] tracking-tight font-medium capitalize min-[450px]:leading-snug leading-12 max-[999px]:text-center max-[425px]:text-[40px]">
               <span className="bg-moving-gradient text-white px-3 rounded-bl-3xl rounded-tr-3xl min-[1200px]:text-[50px] text-[48px] max-[425px]:text-[42px]">
                 transforms
@@ -88,32 +73,21 @@ const Hero = () => {
             </h3>
           </div>
           {/* TOOLTIP  */}
-          <div className="mt-8 flex gap-6 items-center max-[999px]:justify-center">
+          <div className="mt-12 flex gap-6 items-center max-[999px]:justify-center">
             <div className="flex flex-row items-center justify-center">
               <AnimatedTooltip items={people} />
             </div>
             <p className="text-[16px] font-poppins font-light text-light">
-              Trusted my Many People +
+              Trusted by Many People.
             </p>
           </div>
-          {/* CTA BOOK NOW */}
-          {/* <div className="mt-8 flex items-center justify-center">
-            <ShimmerButton
-              className="shadow-2xl min-[820px]:px-4 px-2 py-1.5"
-              background="#005EFF"
-            >
-              <span className="whitespace-pre-wrap flex items-center gap-3 font-poppins text-[16px]">
-                Explore Services <LuChevronRight size={18} />
-              </span>
-            </ShimmerButton>
-          </div> */}
+          {/* SMALL TEXT FOR COMMING SOON */}
+          <h2 className="flex items-center min-[1000px]:justify-start justify-center mt-10 font-inter text-[16px] tracking-tight font-bold text-deep">
+            Coming soon on{" "}
+          </h2>
 
-          {/* 1000PX+ APP CTA */}
-          <div className=" hidden min-[1000px]:flex  mt-8 ticker-shadow w-fit overflow-hidden rounded-xl mx-auto">
-            <AppDownload />
-          </div>
           {/* MAX 1000PX TABLET CTA */}
-          <div className="max-[999px]:flex hidden items-center justify-center w-full mt-8 gap-5">
+          <div className="flex items-center min-[1000px]:justify-start justify-center w-full mt-3 gap-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="140"
@@ -204,13 +178,13 @@ const Hero = () => {
             <Image
               src="/heroimg4.png"
               alt=""
-              height={500}
-              width={500}
+              height={550}
+              width={550}
               priority
               className="mt-14 ml-auto max-[999px]:mx-auto"
             />
             {/* 1st */}
-            <div className="absolute max-[1200px]:hidden left-0  bottom-[126px]  bg-gray-200/60 backdrop-blur-md p-1 rounded-lg blue-shadow">
+            {/* <div className="absolute max-[1200px]:hidden left-0  bottom-[126px]  bg-gray-200/60 backdrop-blur-md p-1 rounded-lg blue-shadow">
               <div className="flex gap-2 mb-2">
                 <div className="w-6 h-6 rounded-md flex items-center justify-center bg-white">
                   <LuCheck className="text-primary-blue" />
@@ -227,7 +201,7 @@ const Hero = () => {
                   className="object-cover rounded-lg"
                 />
               </div>
-            </div>
+            </div> */}
 
             {/* 2ND */}
             <div className="absolute max-[500px]:hidden -top-8 min-[1000px]:right-0 right-16  bg-light/30 backdrop-blur-md p-2 rounded-lg blue-shadow flex flex-col gap-2">
@@ -260,20 +234,20 @@ const Hero = () => {
               </div>
             </div>
             {/* 3RD */}
-            <div className="absolute max-[500px]:hidden bottom-0 right-20 min-[1000px]:-bottom-10 min-[1000px]:right-10 bg-light/40 backdrop-blur-sm p-2 rounded-lg blue-shadow max-w-[15rem]">
+            <div className="absolute max-[500px]:hidden bottom-5 left-0 bg-light/40 backdrop-blur-sm p-2 rounded-lg blue-shadow max-w-[15rem]">
               <div className=" flex items-center gap-3">
                 <Image
                   src="/customer1.png"
                   alt=""
-                  height={55}
-                  width={55}
+                  height={40}
+                  width={40}
                   className="rounded-full bg-sky"
                 />
                 <div className=" flex flex-col items-center font-poppins">
-                  <h1 className="text-[15px] font-medium tracking-tight text-deep">
+                  <h1 className="text-[14px] font-medium tracking-tight text-deep">
                     Bhavesh singh
                   </h1>
-                  <p className=" text-[14px] text-gray-600 tracking-tight">
+                  <p className=" text-[12px] text-gray-600 tracking-tight">
                     customer, Mohalli
                   </p>
                 </div>
@@ -281,15 +255,15 @@ const Hero = () => {
               <div className="bg-white p-1 rounded-lg">
                 <div className="flex w-full justify-baseline">
                   <BiSolidQuoteSingleLeft
-                    size={20}
+                    size={16}
                     className=" text-light/30"
                   />
                   <BiSolidQuoteSingleLeft
-                    size={20}
+                    size={16}
                     className=" text-light/30"
                   />
                 </div>
-                <div className="mt-2 font-roboto tracking-tighter text-[14px] text-center">
+                <div className=" font-roboto tracking-tighter text-[13px] text-center text-balance py-2">
                   <p className="max-w-[80%] mx-auto">
                     such a great app that help me to fixes my plumbing work in
                     no time. i feel confident using this app.
@@ -305,3 +279,12 @@ const Hero = () => {
 };
 
 export default Hero;
+
+//  <SparklesCore
+//             background="transparent"
+//             minSize={0.4}
+//             maxSize={1}
+//             particleDensity={1200}
+//             className="w-[200px] h-[40px] mx-auto -mt-5"
+//             particleColor="#005EFF"
+//           /> *
