@@ -5,7 +5,7 @@ const Wavy = () => {
   return (
     <div className="bg-primary-blue w-full h-[10rem] min-[750px]:mt-[15rem] max-[749px]:mt-[12rem] max-[500px]:mt-[6rem] relative mb-10">
       {/* Center image */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-50">
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10">
         <Image
           src="/effectPic.png"
           alt="image"

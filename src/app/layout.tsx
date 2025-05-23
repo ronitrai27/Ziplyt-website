@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Roboto, Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
-// import Navbar from "@/components/Navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Configure fonts
 const openSans = Open_Sans({
@@ -77,6 +77,7 @@ export default function RootLayout({
         {/* <Navbar /> */}
         {children}
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
