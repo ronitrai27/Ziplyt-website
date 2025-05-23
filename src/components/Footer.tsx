@@ -103,13 +103,13 @@ const Footer = () => {
             <li>
               Email:{" "}
               <a href="mailto:support@ziplyt.com" className="text-white">
-                support@ziplyt.com
+                ziplyt.ind@gmail.com
               </a>
             </li>
             <li>
-              Phone: <span className="text-white">+91 98765 43210</span>
+              Phone: <span className="text-white">+91 6280620947</span>
             </li>
-            <li>Location: Mumbai, India</li>
+            <li>Location: Ludhiana, India</li>
           </ul>
 
           {/* <form className="mt-6">

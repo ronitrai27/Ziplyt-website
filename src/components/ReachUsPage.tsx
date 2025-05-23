@@ -103,7 +103,7 @@ export default function ReachUsPage() {
                   <h4 className="font-semibold text-lg text-gray-900">
                     Call Us
                   </h4>
-                  <p className="text-gray-600 mt-1">+1 (800) 123-4567</p>
+                  <p className="text-gray-600 mt-1">+91 6280620947</p>
                   <p className="text-gray-600">Mon-Fri, 9am-6pm EST</p>
                 </div>
               </div>
@@ -116,8 +116,8 @@ export default function ReachUsPage() {
                   <h4 className="font-semibold text-lg text-gray-900">
                     Visit Us
                   </h4>
-                  <p className="text-gray-600 mt-1">123 Innovation Drive</p>
-                  <p className="text-gray-600">San Francisco, CA 94107</p>
+                  <p className="text-gray-600 mt-1">ludhiana, dugri phase1</p>
+                  <p className="text-gray-600">Punjab , India</p>
                 </div>
               </div>
 
@@ -129,7 +129,7 @@ export default function ReachUsPage() {
                   <h4 className="font-semibold text-lg text-gray-900">
                     Email Us
                   </h4>
-                  <p className="text-gray-600 mt-1">support@ziplyt.com</p>
+                  <p className="text-gray-600 mt-1">ziplyt.ind@gmail.com</p>
                   <p className="text-gray-600">
                     We&apos;ll respond within 24 hours
                   </p>
