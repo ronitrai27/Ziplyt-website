@@ -63,7 +63,7 @@ const Feature = () => {
           </div>
           {/* text */}
           <div className="w-full text-center  space-y-2">
-            <h2 className="text-[24px] min-[800px]:text-[28px] font-semibold font-poppins text-deep leading-snug tracking-tighter">
+            <h2 className="text-[24px] min-[800px]:text-[28px] font-medium font-poppins text-deep leading-snug tracking-tighter">
               When Service Feels Like a Smile
             </h2>
             <p className="text-[18px] min-[800px]:text-[20px] text-light text-balance font-inter tracking-tight leading-snug">
@@ -78,7 +78,7 @@ const Feature = () => {
         <div className="flex max-[820px]:hidden flex-row items-center gap-10 px-8">
           {/* text */}
           <div className="w-full text-center  space-y-2">
-            <h2 className="text-[24px] min-[800px]:text-[28px] font-semibold font-poppins text-deep leading-snug tracking-tighter">
+            <h2 className="text-[24px] min-[800px]:text-[28px] font-medium font-poppins text-deep leading-snug tracking-tighter">
               Speed That Surprises You
             </h2>
             <p className="text-[18px] min-[800px]:text-[20px] text-light text-balance font-inter tracking-tight leading-snug">
@@ -114,7 +114,7 @@ const Feature = () => {
           </div>
           {/* text */}
           <div className="w-full text-center  space-y-2">
-            <h2 className="text-[24px] min-[500px]:text-[28px] font-semibold font-poppins text-deep leading-snug tracking-tighter">
+            <h2 className="text-[24px] min-[500px]:text-[28px] font-medium font-poppins text-deep leading-snug tracking-tighter">
               Speed That Surprises You
             </h2>
             <p className="text-[18px] min-[800px]:text-[20px] text-light text-balance font-inter tracking-tight leading-snug">

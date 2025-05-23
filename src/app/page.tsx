@@ -3,10 +3,11 @@ import Hero from "@/components/Hero";
 import LogoTicker from "@/components/LogoTicker";
 import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonial";
-// import Footer from "@/components/Footer";
+
 import Feature from "@/components/Feature";
 import Wavy from "@/components/Wavy";
 import WaitlistBar from "@/components/Waitlist";
+import { FAQSection } from "@/components/Faq-section";
 export default function Home() {
   return (
     <div className="relative overflow-hidden">
@@ -32,7 +33,7 @@ export default function Home() {
       <Wavy />
       <Services />
       <Testimonial />
-      {/* <Footer /> */}
+      <FAQSection />
       <WaitlistBar />
     </div>
   );
