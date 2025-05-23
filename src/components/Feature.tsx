@@ -63,10 +63,10 @@ const Feature = () => {
           </div>
           {/* text */}
           <div className="w-full text-center  space-y-2">
-            <h2 className="text-[24px] min-[500px]:text-[28px] font-semibold font-poppins text-deep leading-snug tracking-tighter">
+            <h2 className="text-[24px] min-[800px]:text-[28px] font-semibold font-poppins text-deep leading-snug tracking-tighter">
               When Service Feels Like a Smile
             </h2>
-            <p className="text-[15px] min-[500px]:text-[16px] text-light text-balance font-inter tracking-tight leading-snug">
+            <p className="text-[18px] min-[800px]:text-[20px] text-light text-balance font-inter tracking-tight leading-snug">
               At Ziplyt, we go beyond just getting the job done — we bring joy,
               ease, and peace of mind to your doorstep. Trusted pros,
               hassle-free bookings, and smiles all around.
@@ -78,10 +78,10 @@ const Feature = () => {
         <div className="flex max-[820px]:hidden flex-row items-center gap-10 px-8">
           {/* text */}
           <div className="w-full text-center  space-y-2">
-            <h2 className="text-[24px] min-[500px]:text-[28px] font-semibold font-poppins text-deep leading-snug tracking-tighter">
+            <h2 className="text-[24px] min-[800px]:text-[28px] font-semibold font-poppins text-deep leading-snug tracking-tighter">
               Speed That Surprises You
             </h2>
-            <p className="text-[15px] min-[500px]:text-[16px] text-light text-balance font-inter tracking-tight leading-snug">
+            <p className="text-[18px] min-[800px]:text-[20px] text-light text-balance font-inter tracking-tight leading-snug">
               From booking to done — experience hassle-free service that’s fast,
               efficient, and right at your doorstep in minutes.
             </p>
@@ -117,7 +117,7 @@ const Feature = () => {
             <h2 className="text-[24px] min-[500px]:text-[28px] font-semibold font-poppins text-deep leading-snug tracking-tighter">
               Speed That Surprises You
             </h2>
-            <p className="text-[15px] min-[500px]:text-[16px] text-light text-balance font-inter tracking-tight leading-snug">
+            <p className="text-[18px] min-[800px]:text-[20px] text-light text-balance font-inter tracking-tight leading-snug">
               From booking to done — experience hassle-free service that’s fast,
               efficient, and right at your doorstep in minutes.
             </p>
