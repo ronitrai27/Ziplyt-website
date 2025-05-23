@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { ShieldCheck, AlarmClock, Banknote } from "lucide-react";
-import { WobbleCard } from "@/components/ui/wobble-card";
 const Feature = () => {
   return (
     <section className="container py-4 px-4 min-[1000px]:mt-10">
@@ -25,10 +24,10 @@ const Feature = () => {
                     <ShieldCheck size={18} className="text-primary-blue" />
                   )}
                   {i === 1 && (
-                    <Banknote size={18} className="text-primary-blue" />
+                    <AlarmClock size={18} className="text-primary-blue" />
                   )}
                   {i === 2 && (
-                    <AlarmClock size={18} className="text-primary-blue" />
+                    <Banknote size={18} className="text-primary-blue" />
                   )}
                 </div>
                 <h3 className="text-deep font-inter text-[18px] tracking-tighter font-light mb-1 whitespace-nowrap overflow-hidden text-ellipsis">
@@ -42,7 +41,7 @@ const Feature = () => {
                   {i === 1 &&
                     "Every service provider is background-checked and verified to ensure top-quality service delivery."}
                   {i === 2 &&
-                    "Book services in just a few taps — no hassle, no delays. Get help when you need it."}
+                    "Turn your bookings into rewards that make every experience worth it. Zipcoins help you save more every time you book."}
                 </p>
               </div>
             ))}
@@ -50,7 +49,7 @@ const Feature = () => {
         </div>
 
         {/*  WOMAN */}
-        <div className="flex min-[820px]:flex-row flex-col items-center gap-5 px-8">
+        <div className="flex min-[820px]:flex-row flex-col items-center gap-10 px-8 mb-5">
           {/* image */}
           <div className="relative">
             <div className="bg-primary-blue w-[20rem] h-[20rem] rounded-3xl feature-shadow"></div>
@@ -59,17 +58,34 @@ const Feature = () => {
               alt="woman"
               width={300}
               height={300}
-              className="absolute top-10 right-10 object-cover rounded-lg "
+              className="absolute top-10 right-10 object-cover rounded-lg"
             />
           </div>
           {/* text */}
-          <div></div>
+          <div className="w-full text-center  space-y-2">
+            <h2 className="text-[24px] min-[500px]:text-[28px] font-semibold font-poppins text-deep leading-snug tracking-tighter">
+              When Service Feels Like a Smile
+            </h2>
+            <p className="text-[15px] min-[500px]:text-[16px] text-light text-balance font-inter tracking-tight leading-snug">
+              At Ziplyt, we go beyond just getting the job done — we bring joy,
+              ease, and peace of mind to your doorstep. Trusted pros,
+              hassle-free bookings, and smiles all around.
+            </p>
+          </div>
         </div>
 
         {/* WORKER */}
-        <div className="flex min-[820px]:flex-row flex-col items-center gap-5 px-8">
-          {/* TEXT */}
-          <div className="w-full"></div>
+        <div className="flex max-[820px]:hidden flex-row items-center gap-10 px-8">
+          {/* text */}
+          <div className="w-full text-center  space-y-2">
+            <h2 className="text-[24px] min-[500px]:text-[28px] font-semibold font-poppins text-deep leading-snug tracking-tighter">
+              Speed That Surprises You
+            </h2>
+            <p className="text-[15px] min-[500px]:text-[16px] text-light text-balance font-inter tracking-tight leading-snug">
+              From booking to done — experience hassle-free service that’s fast,
+              efficient, and right at your doorstep in minutes.
+            </p>
+          </div>
           {/* Image */}
           <div className="relative">
             <div className="bg-primary-blue w-[20rem] h-[20rem] rounded-3xl feature-shadow"></div>
@@ -80,6 +96,31 @@ const Feature = () => {
               height={300}
               className="absolute top-10 left-10 object-cover rounded-lg "
             />
+          </div>
+        </div>
+
+        {/* WORKER MOBILE  */}
+        <div className="min-[820px]:hidden flex flex-col items-center gap-10 px-8">
+          {/* Image */}
+          <div className="relative">
+            <div className="bg-primary-blue w-[20rem] h-[20rem] rounded-3xl feature-shadow"></div>
+            <Image
+              src="/painter.jpg"
+              alt="woman"
+              width={300}
+              height={300}
+              className="absolute top-10 left-10 object-cover rounded-lg "
+            />
+          </div>
+          {/* text */}
+          <div className="w-full text-center  space-y-2">
+            <h2 className="text-[24px] min-[500px]:text-[28px] font-semibold font-poppins text-deep leading-snug tracking-tighter">
+              Speed That Surprises You
+            </h2>
+            <p className="text-[15px] min-[500px]:text-[16px] text-light text-balance font-inter tracking-tight leading-snug">
+              From booking to done — experience hassle-free service that’s fast,
+              efficient, and right at your doorstep in minutes.
+            </p>
           </div>
         </div>
       </main>

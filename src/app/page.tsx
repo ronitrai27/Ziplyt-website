@@ -1,4 +1,4 @@
-// import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import LogoTicker from "@/components/LogoTicker";
 import Services from "@/components/Services";
@@ -10,7 +10,7 @@ import WaitlistBar from "@/components/Waitlist";
 export default function Home() {
   return (
     <div className="relative overflow-hidden">
-      {/* <Navbar /> */}
+      <Navbar />
       {/* CTA FOR SMALL SCREEN */}
       <div className="hidden max-[999px]:flex items-center gap-5 justify-center w-full bg-gradient-to-r from-primary-blue via-sky to-deep px-6 py-2">
         <h1 className="text-white font-medium text-[14px] font-inter tracking-tighter underline underline-offset-2 ">
