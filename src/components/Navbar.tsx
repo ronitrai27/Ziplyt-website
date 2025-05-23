@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={` z-50 top-0 left-1/2 -translate-x-1/2 transition-all duration-300 ${
+      className={`z-50 top-0 left-1/2 -translate-x-1/2 transition-[padding,margin,width,background,box-shadow,transform] duration-500 ease-in-out ${
         isSticky
           ? "fixed bg-white/30 backdrop-blur-md my-6 shadow-md py-3 px-4 w-[80%] rounded-xl"
           : "relative bg-transparent py-3 px-5 w-full"
