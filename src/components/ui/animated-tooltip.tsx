@@ -23,6 +23,7 @@ export const AnimatedTooltip = ({
 
   const x = useMotionValue(0); // going to set this value on mouse move
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleMouseMove = (event: any) => {
     const halfWidth = event.target.offsetWidth / 2;
     x.set(event.nativeEvent.offsetX - halfWidth);
