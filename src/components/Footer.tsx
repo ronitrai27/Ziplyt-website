@@ -1,5 +1,7 @@
+import Image from "next/image";
 import React from "react";
-import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import Link from "next/link";
+// import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -15,30 +17,42 @@ const Footer = () => {
             transparent — your tasks, our priority.
           </p>
           <div className="flex gap-4">
-            <a
-              href="#"
-              aria-label="Instagram"
+            <Link
+              href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className="text-pink-500 hover:text-white text-xl transition" />
-            </a>
-            <a
-              href="#"
-              aria-label="LinkedIn"
+              <Image
+                src="/instagram.png"
+                alt="Instagram"
+                width={25}
+                height={25}
+              />
+            </Link>
+            <Link
+              href="https://www.linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedinIn className="text-blue-500 hover:text-white text-xl transition" />
-            </a>
-            <a
-              href="#"
-              aria-label="Facebook"
+              <Image
+                src="/linkedin.png"
+                alt="LinkedIn"
+                width={25}
+                height={25}
+              />
+            </Link>
+            <Link
+              href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebookF className="text-blue-600 hover:text-white text-xl transition" />
-            </a>
+              <Image
+                src="/facebook.png"
+                alt="Facebook"
+                width={25}
+                height={25}
+              />
+            </Link>
           </div>
         </div>
 
