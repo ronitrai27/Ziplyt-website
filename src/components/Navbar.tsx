@@ -47,15 +47,15 @@ const Navbar = () => {
         {/* NAV LINKS (Desktop) */}
         <nav className="hidden min-[820px]:inline-flex gap-6 items-center font-inter text-[17px] font-light tracking-tight text-light">
           <Link href="/reachus" className="hover:text-deep">
-            reach us
+            Reach us
           </Link>
           <span className="w-2 h-2 bg-deep rounded-full"></span>
           <Link href="/workwithus" className="hover:text-deep">
-            careers
+            Careers
           </Link>
           <span className="w-2 h-2 bg-deep rounded-full"></span>
           <Link href="/about" className="hover:text-deep">
-            about company
+            About company
           </Link>
         </nav>
 
@@ -102,27 +102,29 @@ const Navbar = () => {
             <h1 className="text-[28px] font-main font-bold tracking-tight">
               Ziplyt
             </h1>
-            <a
+            <Link
+              href="/reachus"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-[16px] tracking-tight font-poppins font-medium uppercase text-deep hover:text-primary-blue"
+            >
+              Reach Us
+            </Link>
+
+            <Link
               href="#"
               onClick={() => setIsMenuOpen(false)}
               className="text-[16px] tracking-tight font-poppins font-medium uppercase text-deep hover:text-primary-blue"
             >
-              reach us
-            </a>
-            <a
+              Careers
+            </Link>
+
+            <Link
               href="#"
               onClick={() => setIsMenuOpen(false)}
               className="text-[16px] tracking-tight font-poppins font-medium uppercase text-deep hover:text-primary-blue"
             >
-              careers
-            </a>
-            <a
-              href="#"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-[16px] tracking-tight font-poppins font-medium uppercase text-deep hover:text-primary-blue"
-            >
-              about company
-            </a>
+              About Company
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>

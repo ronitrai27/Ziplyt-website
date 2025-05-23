@@ -65,11 +65,11 @@ export default function ReachUsPage() {
           priority
         />
         <div className="absolute inset-0 ziplyt-gradient opacity-60"></div>
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 font-poppins">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Get in Touch
           </h1>
-          <p className="text-blue-100 max-w-2xl text-lg">
+          <p className="text-blue-100 max-w-2xl text-lg tracking-tighter font-inter">
             We&apos;re here to help you find the perfect workers for your
             business needs
           </p>
@@ -82,10 +82,10 @@ export default function ReachUsPage() {
           {/* Left column - Contact info */}
           <div className="lg:col-span-2 space-y-10">
             <div>
-              <h2 className="text-sm text-blue-600 font-medium uppercase tracking-wider mb-3">
+              <h2 className="text-sm text-blue-600 font-medium uppercase tracking-tight font-inter mb-3">
                 Contact Us
               </h2>
-              <h3 className="ziplyt-heading mb-4">
+              <h3 className="ziplyt-heading mb-4 font-inter tracking-tighter">
                 Let&apos;s start a conversation
               </h3>
               <p className="text-gray-600 text-lg">

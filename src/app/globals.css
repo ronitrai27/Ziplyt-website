@@ -421,7 +421,7 @@ box-shadow: 18px -9px 30px -24px rgba(66, 68, 90, 1);
 }
 
 .ziplyt-heading {
-  @apply text-3xl md:text-4xl font-bold text-gray-900;
+  @apply text-3xl md:text-4xl font-medium text-deep;
 }
 
 .ziplyt-subheading {

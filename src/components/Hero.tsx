@@ -87,85 +87,34 @@ const Hero = () => {
           </h2>
 
           {/* MAX 1000PX TABLET CTA */}
+
           <div className="flex items-center min-[1000px]:justify-start justify-center w-full mt-3 gap-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="140"
-              height="50"
-              viewBox="0 0 160 50"
-              className="cursor-pointer"
-            >
-              <rect width="150" height="50" rx="12" fill="black" />
-              <g transform="translate(10, 10)">
-                <path
-                  fill="white"
-                  d="M24.7 10.4c-.6.8-1.5 1.4-2.4 1.4-.1-1 .2-2.1.7-2.9.6-.8 1.5-1.4 2.4-1.4.1 1-.2 2 .7 2.9zm-3.2 2.2c-1.3 0-2.6.9-3.4.9-.9 0-2.2-.8-3.6-.8-1.8 0-3.6 1-4.5 2.6-1.9 3.3-.5 8.2 1.4 10.9.9 1.3 2 2.7 3.4 2.6 1.3 0 1.8-.9 3.4-.9s2 .9 3.5.9c1.5 0 2.4-1.3 3.3-2.6.9-1.4 1.3-2.7 1.3-2.8 0-.1-2.5-1-2.6-4.1-.1-2.6 2.1-3.9 2.2-4-.1-.1-2.3-1.5-4.4-1.5z"
-                />
-                <text
-                  x="32"
-                  y="10"
-                  fill="white"
-                  fontSize="10"
-                  fontFamily="sans-serif"
-                >
-                  Download on the
-                </text>
-                <text
-                  x="32"
-                  y="25"
-                  fill="white"
-                  fontSize="16"
-                  fontWeight="bold"
-                  fontFamily="sans-serif"
-                >
-                  App Store
-                </text>
-              </g>
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="150"
-              height="50"
-              viewBox="0 0 180 50"
-              className="cursor-pointer"
-            >
-              <rect width="150" height="50" rx="12" fill="black" />
-              <g transform="translate(10, 10)">
-                <polygon
-                  fill="#A6A6A6"
-                  points="3.6,0 0,3.3 8.4,11.8 0,20.3 3.6,23.6 19.2,11.8"
-                />
-                <polygon fill="#00ADEF" points="0,3.3 0,20.3 8.4,11.8" />
-                <polygon fill="#FBBB00" points="3.6,0 19.2,11.8 8.4,11.8" />
-                <polygon fill="#518EF8" points="3.6,23.6 19.2,11.8 8.4,11.8" />
-                <text
-                  x="32"
-                  y="10"
-                  fill="white"
-                  fontSize="10"
-                  fontFamily="sans-serif"
-                >
-                  Get it on
-                </text>
-                <text
-                  x="32"
-                  y="25"
-                  fill="white"
-                  fontSize="16"
-                  fontWeight="bold"
-                  fontFamily="sans-serif"
-                >
-                  Google Play
-                </text>
-              </g>
-            </svg>
+            {/* APPLE */}
+            <div className="bg-deep px-4 py-3 rounded-lg flex items-center gap-2 shadow-md">
+              <Image src="/apple-logo.png" alt="apple" width={25} height={25} />
+              <p className="font-inter text-[14px] font-medium text-white">
+                App Store
+              </p>
+            </div>
+            {/* PLAYSTORE */}
+            <div className="bg-deep px-4 py-3 rounded-lg flex items-center gap-2 shadow-md">
+              <Image
+                src="/playstore.png"
+                alt="playstore"
+                width={25}
+                height={25}
+              />
+              <p className="font-inter text-[14px] font-medium text-white">
+                Play Store
+              </p>
+            </div>
           </div>
         </div>
         {/* RIGHT CONTENT */}
         <div className="min-[1000px]:w-[45%] w-full relative">
-          <h1 className="max-[999px]:hidden flex font-poppins bg-gray-100/30 px-4 py-1 w-fit text-[14px] font-medium mx-auto min-[1000px]:text-deep text-light mt-5 skew-x-12">
+          {/* <h1 className="max-[999px]:hidden flex font-poppins bg-gray-100/30 px-4 py-1 w-fit text-[14px] font-medium mx-auto min-[1000px]:text-deep text-light mt-5 skew-x-12">
             Expereince the breakthrough
-          </h1>
+          </h1> */}
           {/* MAX-999 H1  */}
           <div className="max-[999px]:flex hidden items-center justify-center gap-5 max-[430px]:gap-1 mt-4">
             <hr className="border-b-[.5px] border-light/30 w-[10%]" />
@@ -183,27 +132,8 @@ const Hero = () => {
               priority
               className="mt-14 ml-auto max-[999px]:mx-auto"
             />
-            {/* 1st */}
-            {/* <div className="absolute max-[1200px]:hidden left-0  bottom-[126px]  bg-gray-200/60 backdrop-blur-md p-1 rounded-lg blue-shadow">
-              <div className="flex gap-2 mb-2">
-                <div className="w-6 h-6 rounded-md flex items-center justify-center bg-white">
-                  <LuCheck className="text-primary-blue" />
-                </div>
-                <h1 className="text-[15px] font-poppins tracking-tighter text-center">
-                  Experience unmatched <br /> transparency
-                </h1>
-              </div>
-              <div className="relative w-[160px] h-[160px]  mx-auto ">
-                <Image
-                  src="/float1.png"
-                  alt="pic"
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
-            </div> */}
 
-            {/* 2ND */}
+            {/* 1ND */}
             <div className="absolute max-[500px]:hidden -top-8 min-[1000px]:right-0 right-16  bg-light/30 backdrop-blur-md p-2 rounded-lg blue-shadow flex flex-col gap-2">
               <h1 className="text-[16px] font-poppins text-black font-medium capitalize tracking-tighter">
                 Urgency ? We got you.
@@ -233,7 +163,7 @@ const Hero = () => {
                 />
               </div>
             </div>
-            {/* 3RD */}
+            {/* 2RD */}
             <div className="absolute max-[500px]:hidden bottom-5 left-0 bg-light/40 backdrop-blur-sm p-2 rounded-lg blue-shadow max-w-[15rem]">
               <div className=" flex items-center gap-3">
                 <Image

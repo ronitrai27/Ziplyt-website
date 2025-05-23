@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 // import { LuCheck } from "react-icons/lu";
 const Testimonial = () => {
   return (
-    <section className="w-full my-10 px-12">
+    <section className="w-full my-10 min-[1000px]:px-12 px-6">
       <div className=" flex min-[700px]:flex-row flex-col items-center justify-between gap-5">
         {/* LEFT SIDE */}
         <main className="relative w-full h-[380px] min-[1000px]:h-[500px] flex flex-col gap-3 items-center justify-center  overflow-hidden">

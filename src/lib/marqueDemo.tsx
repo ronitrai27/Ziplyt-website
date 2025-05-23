@@ -68,10 +68,10 @@ const ReviewCard = ({
         "bg-light/30 border-light hover:bg-primary-blue hover:text-white"
       )}
     >
-      <div className="flex flex-row items-center gap-2">
+      <div className="flex flex-row max-[700px]:flex-col items-center gap-2">
         <img className="rounded-full" width="46" height="46" alt="" src={img} />
         <div className="flex flex-col">
-          <figcaption className="text-[18px] font-medium  font-poppins text-white">
+          <figcaption className="text-[18px] font-medium  font-poppins text-white capitalize">
             {name}
           </figcaption>
           {/* <p className="text-xs font-medium font-inter">{username}</p> */}
