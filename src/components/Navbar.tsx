@@ -61,16 +61,18 @@ const Navbar = () => {
 
         {/* CTA + Mobile Menu Button */}
         <div className="flex items-center gap-3">
-          <ShimmerButton
-            className={`shadow-2xl min-[820px]:px-4 px-2 py-1.5 transition-all duration-300 ${
-              isSticky ? "scale-90" : "scale-100"
-            }`}
-            background="#005EFF"
-          >
-            <span className="whitespace-pre-wrap text-center font-poppins text-[16px]">
-              Explore
-            </span>
-          </ShimmerButton>
+          <a href="#features">
+            <ShimmerButton
+              className={`shadow-2xl min-[820px]:px-4 px-2 py-1.5 transition-all duration-300 ${
+                isSticky ? "scale-90" : "scale-100"
+              }`}
+              background="#005EFF"
+            >
+              <span className="whitespace-pre-wrap text-center font-poppins text-[16px]">
+                Explore
+              </span>
+            </ShimmerButton>
+          </a>
 
           <button
             onClick={() => setIsMenuOpen(true)}

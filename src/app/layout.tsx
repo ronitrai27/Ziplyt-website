@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   title: "Ziplyt – Book Trusted Local Workers Easily",
   description:
     "Ziplyt, Indias's first online home service app that let you book verified skilled local workers in no time, say goodbye to waiting , welcom instant solution.",
-  viewport: "width=device-width, initial-scale=1",
+  // viewport: "width=device-width, initial-scale=1",
   keywords: [
     "Ziplyt",
     "book local workers",

@@ -45,7 +45,10 @@ export function FAQSection() {
   };
 
   return (
-    <section className="py-12 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto mt-14 select-none">
+    <section
+      className="py-12 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto mt-14 select-none"
+      id="faq"
+    >
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
         <div>
           <h2 className="text-[20px] font-medium mb-2 tracking-tight text-light font-inter">

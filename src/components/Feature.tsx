@@ -3,7 +3,7 @@ import Image from "next/image";
 import { ShieldCheck, AlarmClock, Banknote } from "lucide-react";
 const Feature = () => {
   return (
-    <section className="container py-4 px-4 min-[1000px]:mt-10">
+    <section className="container py-4 px-4 min-[1000px]:mt-10" id="features">
       <main>
         <h4 className="text-center font-inter text-[20px] tracking-tighter font-light text-light">
           WHY CHOOSE US ?

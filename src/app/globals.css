@@ -414,6 +414,10 @@ box-shadow: 18px -9px 30px -24px rgba(66, 68, 90, 1);
     @apply bg-background text-foreground;
 
   }
+  html {
+  scroll-behavior: smooth;
+}
+
 
 }
 @utility container{
