@@ -50,7 +50,7 @@ const Navbar = () => {
             Reach us
           </Link>
           <span className="w-2 h-2 bg-deep rounded-full"></span>
-          <Link href="/workwithus" className="hover:text-deep">
+          <Link href="/careers" className="hover:text-deep">
             Careers
           </Link>
           <span className="w-2 h-2 bg-deep rounded-full"></span>
@@ -111,7 +111,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              href="#"
+              href="/careers"
               onClick={() => setIsMenuOpen(false)}
               className="text-[16px] tracking-tight font-poppins font-medium uppercase text-deep hover:text-primary-blue"
             >

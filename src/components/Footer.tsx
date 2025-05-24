@@ -12,8 +12,7 @@ const Footer = () => {
             Ziplyt
           </h1>
           <p className="text-sm text-gray-400 mb-4">
-            Revolutionizing how you hire trusted local experts. Fast, easy, and
-            transparent — your tasks, our priority.
+            Zip it , Fix it , Love it
           </p>
           <div className="flex gap-4">
             <Link
@@ -99,11 +98,6 @@ const Footer = () => {
             <li>
               <a href="#" className="hover:text-white">
                 Reach Us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Partnerships
               </a>
             </li>
           </ul>

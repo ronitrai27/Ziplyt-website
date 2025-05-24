@@ -45,30 +45,29 @@ const Hero = () => {
       image: "/test6.png",
     },
   ];
-  // min-h-[93vh]
+
   return (
     <section className="min-h-[93vh] w-full min-[1024]:py-6 min-[820]:py-4 py-3 px-4 min-[1200px]:px-8 container">
       <div className="flex flex-col min-[1000px]:flex-row gap-4">
         {/* LEFT CONTENT */}
+
         <div className="min-[1000px]:w-[55%] w-full">
           {/* MAIN HEAD + slogan */}
           <div className="mt-12 min-[1024]:px-2 text-deep">
-            <h1 className="font-poppins text-[40px] min-[1200px]:text-[46px] tracking-tight font-medium capitalize min-[450px]:leading-snug leading-12 max-[999px]:text-center max-[425px]:text-[40px]">
+            <h1 className="font-poppins text-[40px] min-[1200px]:text-[46px] tracking-normal font-medium capitalize leading-snug  max-[999px]:text-center    text-balance">
               <span className="bg-moving-gradient text-white px-3 rounded-bl-3xl rounded-tr-3xl min-[1200px]:text-[50px] text-[48px] max-[425px]:text-[42px]">
-                transforms
+                Revolutionize
               </span>{" "}
-              the way <br />
-              to connect & <br />
-              book{" "}
-              <span className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] min-[1200px]:text-[50px] text-[48px] font-[500] font-inter tracking-tighter max-[425px]:text-[46px]">
-                Professional{" "}
+              Home Services <br className="br-800-999" /> with Ziplyt
+              <br />
+              <span className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-inter italic text-[42px]">
+                Fast & Transparent
               </span>
-              Online
             </h1>
-            <h3 className="font-inter text-[24px] font-light tracking-tight mt-5 max-[999px]:text-center leading-snug text-light">
-              From your AC repair , bathroom clean To Tap fix in just{" "}
-              <span className="font-poppins font-bold tracking-tight text-deep">
-                10 mintues.
+            <h3 className="font-inter text-[24px] font-light tracking-tight mt-5 max-[999px]:text-center leading-tight text-light text-balance">
+              Say goodbye to waiting, Welcome to instant Home Solutions{" "}
+              <span className="font-poppins font-medium tracking-tight text-deep">
+                under 10 mintues.
               </span>
             </h3>
           </div>
@@ -87,7 +86,6 @@ const Hero = () => {
           </h2>
 
           {/* MAX 1000PX TABLET CTA */}
-
           <div className="flex items-center min-[1000px]:justify-start justify-center w-full mt-3 gap-5">
             {/* APPLE */}
             <div className="bg-deep px-4 py-3 rounded-lg flex items-center gap-2 shadow-md">
@@ -110,6 +108,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        {/* ----------------------------------------------- */}
         {/* RIGHT CONTENT */}
         <div className="min-[1000px]:w-[45%] w-full relative">
           {/* <h1 className="max-[999px]:hidden flex font-poppins bg-gray-100/30 px-4 py-1 w-fit text-[14px] font-medium mx-auto min-[1000px]:text-deep text-light mt-5 skew-x-12">

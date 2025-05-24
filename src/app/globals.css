@@ -106,6 +106,30 @@ box-shadow: 18px -9px 30px -24px rgba(66, 68, 90, 1);
     }
   }
 
+  @keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3); /* Tailwind blue-500 */
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+@media (min-width: 800px) and (max-width: 999px) {
+  .br-800-999 {
+    display: block !important;
+  }
+}
+@media (max-width: 799px), (min-width: 1000px) {
+  .br-800-999 {
+    display: none !important;
+  }
+}
+
+
 }
 
 @layer base {

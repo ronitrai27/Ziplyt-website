@@ -32,7 +32,6 @@ export default function ReachUsPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate API call
     try {
       await new Promise((resolve) => setTimeout(resolve, 1000));
       console.log("Form submitted:", formData);
@@ -53,11 +52,11 @@ export default function ReachUsPage() {
   };
 
   return (
-    <section className="w-full bg-gray-50">
+    <section className="w-full bg-white">
       {/* Header with blue overlay image */}
       <div className="relative h-64 md:h-80 w-full overflow-hidden">
         <Image
-          src="/plumber.jpg"
+          src="/reachus.jpg"
           alt="Professional workers"
           width={1920}
           height={800}
@@ -88,16 +87,16 @@ export default function ReachUsPage() {
               <h3 className="ziplyt-heading mb-4 font-inter tracking-tighter">
                 Let&apos;s start a conversation
               </h3>
-              <p className="text-gray-600 text-lg">
-                Have questions about Ziplyt? Our team is ready to assist you
-                with booking skilled professionals for your business.
+              <p className="text-gray-600 font-roboto tracking-tight text-[18px]">
+                Got a question, complaint, or suggestion? We’re all ears — and
+                ready to help.
               </p>
             </div>
 
             <div className="space-y-8">
               <div className="flex items-start gap-5">
-                <div className="bg-blue-50 p-3 rounded-full">
-                  <Phone className="h-6 w-6 text-blue-600" />
+                <div className="bg-gray-200 p-3 rounded-full">
+                  <Phone className="h-5 w-5 text-primary-blue" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg text-gray-900">
@@ -109,8 +108,8 @@ export default function ReachUsPage() {
               </div>
 
               <div className="flex items-start gap-5">
-                <div className="bg-blue-50 p-3 rounded-full">
-                  <MapPin className="h-6 w-6 text-blue-600" />
+                <div className="bg-gray-200 p-3 rounded-full">
+                  <MapPin className="h-5 w-5 text-primary-blue" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg text-gray-900">
@@ -122,8 +121,8 @@ export default function ReachUsPage() {
               </div>
 
               <div className="flex items-start gap-5">
-                <div className="bg-blue-50 p-3 rounded-full">
-                  <Mail className="h-6 w-6 text-blue-600" />
+                <div className="bg-gray-200 p-3 rounded-full">
+                  <Mail className="h-5 w-5 text-primary-blue" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg text-gray-900">
@@ -140,7 +139,7 @@ export default function ReachUsPage() {
 
           {/* Right column - Contact form */}
           <div className="lg:col-span-3">
-            <div className="bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-gray-100">
+            <div className="bg-light/15 p-8 md:p-10 rounded-2xl shadow-sm border border-gray-200">
               {isSuccess ? (
                 <div className="text-center py-10">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-6">
@@ -162,7 +161,7 @@ export default function ReachUsPage() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">
                     Message Sent!
                   </h3>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-white mb-6">
                     Thank you for reaching out. We&apos;ll get back to you
                     shortly.
                   </p>
@@ -176,13 +175,9 @@ export default function ReachUsPage() {
               ) : (
                 <>
                   <div className="mb-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-2xl font-bold text-deep font-inter tracking-tight mb-2">
                       Send Us a Message
                     </h3>
-                    <p className="text-gray-600">
-                      Tell us about your business needs and how Ziplyt can help
-                      you find the right workers
-                    </p>
                   </div>
 
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -201,7 +196,7 @@ export default function ReachUsPage() {
                           value={formData.fullName}
                           onChange={handleChange}
                           required
-                          className="ziplyt-input"
+                          className="ziplyt-input bg-white"
                         />
                       </div>
 
@@ -219,7 +214,7 @@ export default function ReachUsPage() {
                           value={formData.email}
                           onChange={handleChange}
                           required
-                          className="ziplyt-input"
+                          className="ziplyt-input bg-white"
                         />
                       </div>
                     </div>
@@ -238,7 +233,7 @@ export default function ReachUsPage() {
                         value={formData.subject}
                         onChange={handleChange}
                         required
-                        className="ziplyt-input"
+                        className="ziplyt-input bg-white"
                       />
                     </div>
 
@@ -255,7 +250,7 @@ export default function ReachUsPage() {
                         value={formData.message}
                         onChange={handleChange}
                         required
-                        className="ziplyt-input min-h-[150px]"
+                        className="ziplyt-input min-h-[150px] bg-white"
                       />
                     </div>
 

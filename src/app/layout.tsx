@@ -33,7 +33,8 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Ziplyt – Book Trusted Local Workers Easily",
   description:
-    "Ziplyt lets you book verified electricians, plumbers, and cleaners near you. Fast, secure, and hassle-free service booking app.",
+    "Ziplyt, Indias's first online home service app that let you book verified skilled local workers in no time, say goodbye to waiting , welcom instant solution.",
+  viewport: "width=device-width, initial-scale=1",
   keywords: [
     "Ziplyt",
     "book local workers",
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     title: "Ziplyt – Trusted Local Worker Booking App",
     description:
       "Book electricians, plumbers, and more with Ziplyt. Instant, secure, and trusted services at your fingertips.",
-    url: "http://localhost:3000", // temporary URL for local dev
+    url: "https://ziplyt.com",
     siteName: "Ziplyt",
     images: [
       {

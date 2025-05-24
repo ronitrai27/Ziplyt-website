@@ -23,7 +23,7 @@ const categories = [
 
 const Services = () => {
   return (
-    <section className="bg-white my-10">
+    <section className="bg-white my-10 container">
       <main className="max-w-6xl mx-auto px-4">
         <h1 className="uppercase font-poppins text-center text-[42px] text-deep font-medium tracking-tight">
           Your Tasks, Our Expertise
