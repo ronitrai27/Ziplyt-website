@@ -42,7 +42,7 @@ const Services = () => {
               <div className="w-8 h-8 bg-gray-200 flex items-center justify-center rounded-md">
                 <Icon className="text-primary-blue w-5 h-5" />
               </div>
-              <p className="capitalize font-inter text-[16px] font-medium tracking-tight">
+              <p className="capitalize font-inter text-[16px] font-medium tracking-tight whitespace-nowrap">
                 {name}
               </p>
             </div>

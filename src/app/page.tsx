@@ -4,7 +4,7 @@ import LogoTicker from "@/components/LogoTicker";
 import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonial";
 import Feature from "@/components/Feature";
-import Wavy from "@/components/Wavy";
+import BookingSteps from "@/components/Booking";
 import WaitlistBar from "@/components/Waitlist";
 import { FAQSection } from "@/components/Faq-section";
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
       <div className="hidden min-[1000px]:block min-[1000px]:absolute -z-10 top-0 right-44 w-[12rem] h-[40rem] bg-primary-blue rounded-b-full"></div>
       <LogoTicker />
       <Feature />
-      <Wavy />
+      <BookingSteps />
       <Services />
       <Testimonial />
       <FAQSection />
