@@ -51,7 +51,7 @@ export function FAQSection() {
     >
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
         <div>
-          <h2 className="text-[20px] font-medium mb-2 tracking-tight text-light font-inter">
+          <h2 className=" font-inter text-[20px] tracking-tight font-semibold text-light/50">
             Still Doubts ?
           </h2>
           <h1 className="text-[42px] font-poppins font-medium leading-tight bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text]">
