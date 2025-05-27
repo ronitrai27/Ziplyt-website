@@ -5,8 +5,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  // CarouselNext,
+  // CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -168,9 +168,7 @@ export default function ServicesCarousel() {
                 className="pl-2 md:pl-4 basis-[280px] md:basis-[320px] lg:basis-[350px]"
               >
                 <Card
-                  className={`h-[420px] transition-all duration-500 ease-out cursor-pointer border-0 shadow-lg hover:shadow-2xl overflow-hidden group bg-primary-blue/10 ${
-                    isHovered ? "scale-105 shadow-2xl" : "hover:scale-102"
-                  }`}
+                  className={`h-[420px] transition-all duration-500 ease-out cursor-pointer border-0 shadow-lg hover:shadow-2xl overflow-hidden group bg-primary-blue/10 `}
                   onMouseEnter={() => setHoveredCard(service.id)}
                   onMouseLeave={() => setHoveredCard(null)}
                 >
@@ -297,10 +295,10 @@ export default function ServicesCarousel() {
         </CarouselContent>
 
         {/* Navigation Buttons */}
-        <div className="flex justify-center gap-4 mt-8">
+        {/* <div className="flex justify-center gap-4 mt-8">
           <CarouselPrevious className="relative inset-auto translate-y-0 bg-primary-blue/80 backdrop-blur-sm border-0 shadow-lg hover:bg-blue-800 hover:scale-110 transition-all duration-300 text-white" />
           <CarouselNext className="relative inset-auto translate-y-0 bg-primary-blue/80 backdrop-blur-sm border-0 shadow-lg hover:bg-blue-800 hover:scale-110 transition-all duration-300 text-white" />
-        </div>
+        </div> */}
       </Carousel>
     </div>
   );

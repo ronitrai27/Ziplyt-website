@@ -4,17 +4,17 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-deep text-white pt-12 pb-8 mt-20">
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
-        {/* LEFT: Logo + Description + Socials */}
+    <footer className="bg-deep py-8 px-2 mt-14">
+      <div className="w-full grid grid-cols-1 min-[600px]:grid-cols-3 items-start justify-items-center sm:justify-items-start gap-8 px-8 text-center min-[600px]:text-left">
+        {/* Logo + Tagline + Socials */}
         <div>
-          <h1 className="text-3xl font-bold font-main mb-3 text-white">
+          <h1 className="text-3xl font-bold font-main mb-2 text-white tracking-tighter">
             Ziplyt
           </h1>
-          <p className="text-sm text-gray-400 mb-4">
-            Zip it , Fix it , Love it
+          <p className="text-[16px] font-poppins font-semibold text-gray-400 mb-6">
+            Zip it, Fix it, Love it.
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 w-full justify-center sm:justify-start ">
             <Link
               href="https://www.instagram.com"
               target="_blank"
@@ -23,8 +23,8 @@ const Footer = () => {
               <Image
                 src="/instagram.png"
                 alt="Instagram"
-                width={25}
-                height={25}
+                width={24}
+                height={24}
               />
             </Link>
             <Link
@@ -35,8 +35,8 @@ const Footer = () => {
               <Image
                 src="/linkedin.png"
                 alt="LinkedIn"
-                width={25}
-                height={25}
+                width={24}
+                height={24}
               />
             </Link>
             <Link
@@ -47,59 +47,36 @@ const Footer = () => {
               <Image
                 src="/facebook.png"
                 alt="Facebook"
-                width={25}
-                height={25}
+                width={24}
+                height={24}
               />
             </Link>
           </div>
         </div>
 
-        {/* CENTER LEFT: Explore */}
+        {/* Company Info */}
         <div>
-          <h2 className="font-semibold text-lg mb-4">Explore</h2>
-          <ul className="space-y-2 text-gray-300 text-sm">
-            <li>
-              <a href="#services" className="hover:text-white">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#testimonials" className="hover:text-white">
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a href="#features" className="hover:text-white">
-                Features
-              </a>
-            </li>
-            <li>
-              <a href="#faq" className="hover:text-white">
-                FAQs
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* CENTER RIGHT: Company */}
-        <div>
-          <h2 className="font-semibold text-lg mb-4">Company</h2>
-          <ul className="space-y-2 text-gray-300 text-sm">
+          <h2 className="text-lg font-semibold mb-3 font-inter text-white">
+            Company
+          </h2>
+          <ul className="space-y-3 text-sm text-gray-300">
             <li>
               <Link href="/#">
-                <span className="hover:text-white cursor-pointer">
+                <span className="hover:text-white transition cursor-pointer">
                   About Us
                 </span>
               </Link>
             </li>
             <li>
               <Link href="/careers">
-                <span className="hover:text-white cursor-pointer">Careers</span>
+                <span className="hover:text-white transition cursor-pointer">
+                  Careers
+                </span>
               </Link>
             </li>
             <li>
               <Link href="/reachus">
-                <span className="hover:text-white cursor-pointer">
+                <span className="hover:text-white transition cursor-pointer">
                   Reach Us
                 </span>
               </Link>
@@ -107,45 +84,41 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* RIGHT: Support + Newsletter */}
+        {/* Support */}
         <div>
-          <h2 className="font-semibold text-lg mb-4">Support</h2>
-          <ul className="space-y-2 text-gray-300 text-sm">
-            <li>
-              Email:{" "}
-              <a href="mailto:support@ziplyt.com" className="text-white">
+          <h2 className="text-lg font-semibold mb-3 font-inter text-white">
+            Support
+          </h2>
+          <ul className="text-sm text-gray-300 flex flex-col gap-3">
+            <li className="flex flex-col sm:flex-row gap-1">
+              <span className="block text-gray-400">Email:</span>
+              <a href="mailto:ziplyt.ind@gmail.com" className="text-white">
                 ziplyt.ind@gmail.com
               </a>
             </li>
-            <li>
-              Phone: <span className="text-white">+91 6280620947</span>
+            <li className="flex flex-col sm:flex-row gap-1">
+              <span className="block text-gray-400">Phone:</span>
+              <span className="text-white">+91 62806 20947</span>
             </li>
-            <li>Location: Ludhiana, India</li>
+            <li className="flex flex-col sm:flex-row gap-1">
+              <span className="block text-gray-400">Location:</span>
+              <span>Ludhiana, India</span>
+            </li>
           </ul>
-
-          {/* <form className="mt-6">
-            <label className="block mb-2 text-sm text-white">
-              Subscribe to updates
-            </label>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="w-full px-3 py-2 rounded-l-md text-black text-sm"
-              />
-              <button
-                type="submit"
-                className="bg-primary-blue px-4 py-2 rounded-r-md text-white text-sm hover:bg-blue-600 transition"
-              >
-                Subscribe
-              </button>
-            </div>
-          </form> */}
         </div>
+
+        {/* Optional: Quick Links / App Coming Soon */}
+        {/* <div>
+          <h2 className="text-lg font-semibold mb-4">Coming Soon</h2>
+          <p className="text-sm text-gray-400 mb-2">
+            Ziplyt Mobile App is on the way! Stay tuned for a seamless
+            experience on the go. 📱
+          </p>
+        </div> */}
       </div>
 
       {/* Bottom Bar */}
-      <div className="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+      <div className="mt-5 border-t border-gray-700 pt-6 text-center text-[16px] text-gray-200">
         © {new Date().getFullYear()} Ziplyt. All rights reserved.
       </div>
     </footer>
