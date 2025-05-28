@@ -36,13 +36,15 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between">
         {/* LOGO */}
-        <h1
-          className={`font-main font-bold tracking-tight transition-all duration-300 ${
-            isSticky ? "text-[22px]" : "text-[28px]"
-          }`}
-        >
-          Ziplyt
-        </h1>
+        <Link href="/">
+          <h1
+            className={`font-main font-bold tracking-tight transition-all duration-300 ${
+              isSticky ? "text-[22px]" : "text-[28px]"
+            }`}
+          >
+            Ziplyt
+          </h1>
+        </Link>
 
         {/* NAV LINKS (Desktop) */}
         <nav className="hidden min-[820px]:inline-flex gap-6 items-center font-inter text-[17px] font-light tracking-tight text-light">
@@ -101,9 +103,11 @@ const Navbar = () => {
             >
               <X size={28} />
             </button>
-            <h1 className="text-[28px] font-main font-bold tracking-tight">
-              Ziplyt
-            </h1>
+            <Link href="/">
+              <h1 className="text-[28px] font-main font-bold tracking-tight">
+                Ziplyt
+              </h1>
+            </Link>
             <Link
               href="/reachus"
               onClick={() => setIsMenuOpen(false)}
@@ -121,7 +125,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              href="#"
+              href="/about"
               onClick={() => setIsMenuOpen(false)}
               className="text-[16px] tracking-tight font-poppins font-medium uppercase text-deep hover:text-primary-blue"
             >

@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Roboto, Open_Sans, Poppins, Quicksand } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Configure fonts
 const openSans = Open_Sans({
@@ -38,7 +39,6 @@ export const metadata: Metadata = {
   title: "Ziplyt – Book Trusted Local Workers Easily",
   description:
     "Ziplyt, Indias's first online home service app that let you book verified skilled local workers in no time, say goodbye to waiting , welcom instant solution.",
-  // viewport: "width=device-width, initial-scale=1",
   keywords: [
     "Ziplyt",
     "book local workers",
@@ -82,7 +82,8 @@ export default function RootLayout({
         {/* <Navbar /> */}
         {children}
         <Footer />
-        <SpeedInsights />
+        <GoogleAnalytics gaId="G-HBQZ9SX1KW" />
+        {/* <SpeedInsights /> */}
       </body>
     </html>
   );

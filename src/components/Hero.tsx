@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from "react";
 import Image from "next/image";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
@@ -50,7 +50,7 @@ const Hero = () => {
       <div className="flex flex-col min-[1000px]:flex-row gap-4">
         {/* LEFT CONTENT */}
 
-        <div className="min-[1000px]:w-[55%] w-full">
+        <main className="min-[1000px]:w-[55%] w-full">
           {/* MAIN HEAD + slogan */}
           <div className="mt-12 min-[1024]:px-2 text-deep">
             <h1 className="font-poppins text-[40px] min-[1200px]:text-[50px] tracking-tight font-medium capitalize leading-snug  max-[999px]:text-center  text-balance">
@@ -59,9 +59,6 @@ const Hero = () => {
               </span>{" "}
               Home Services <br className="br-800-999" /> with Ziplyt
               <br />
-              {/* <span className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-quicksand italic text-[42px]">
-                Fast & Transparent
-              </span> */}
             </h1>
             {/* ICONS */}
             <div className="flex flex-wrap items-center justify-center w-full gap-3 sm:gap-5 my-5 min-[1000px]:justify-start">
@@ -136,16 +133,17 @@ const Hero = () => {
               </p>
             </div>
           </div>
-        </div>
+        </main>
+
         {/* ----------------------------------------------- */}
         {/* RIGHT CONTENT */}
         <div className="min-[1000px]:w-[45%] w-full relative">
           {/* MAX-999 H1  */}
           <div className="max-[999px]:flex hidden items-center justify-center gap-5 max-[430px]:gap-1 mt-4">
             <hr className="border-b-[.5px] border-light/30 w-[10%]" />
-            <h1 className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-inter text-[16px] font-medium max-[430px]:text-[14px]">
+            <h3 className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-inter text-[16px] font-medium max-[430px]:text-[14px]">
               EXPEREINCE THE BREAKTHROUGH
-            </h1>
+            </h3>
             <hr className="border-b-[.5px] border-light/30 w-[10%] " />
           </div>
 
@@ -167,7 +165,7 @@ const Hero = () => {
               <div className=" flex items-center gap-2 max-w-[14rem] bg-white rounded-xl py-2 px-1">
                 <Image
                   src="/test7.png"
-                  alt=""
+                  alt="hero-image"
                   height={40}
                   width={40}
                   className="rounded-full bg-deep self-start"
@@ -182,7 +180,7 @@ const Hero = () => {
                 </h3>
                 <Image
                   src="/heroimage3.jpg"
-                  alt=""
+                  alt="hero-image"
                   height={40}
                   width={40}
                   className="rounded-full bg-deep self-start"

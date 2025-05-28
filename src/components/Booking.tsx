@@ -27,9 +27,10 @@ const BookingSteps = () => {
         <div className="self-end max-[768px]:mx-auto max-[768px]:w-fit w-full">
           <Image
             src="/wavyimg.png"
-            alt="img"
+            alt="worker-image"
             width={500}
             height={500}
+            priority
             className=""
           />
         </div>
