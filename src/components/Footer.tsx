@@ -67,13 +67,13 @@ const Footer = () => {
                 </span>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/careers">
                 <span className="hover:text-white transition cursor-pointer">
                   Careers
                 </span>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/reachus">
                 <span className="hover:text-white transition cursor-pointer">

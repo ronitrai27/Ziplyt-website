@@ -51,10 +51,10 @@ const Navbar = () => {
           <Link href="/reachus" className="hover:text-deep">
             Reach us
           </Link>
-          <span className="w-2 h-2 bg-deep rounded-full"></span>
+          {/* <span className="w-2 h-2 bg-deep rounded-full"></span>
           <Link href="/careers" className="hover:text-deep">
             Careers
-          </Link>
+          </Link> */}
           <span className="w-2 h-2 bg-deep rounded-full"></span>
           <Link href="/about" className="hover:text-deep">
             About company
@@ -116,13 +116,13 @@ const Navbar = () => {
               Reach Us
             </Link>
 
-            <Link
+            {/* <Link
               href="/careers"
               onClick={() => setIsMenuOpen(false)}
               className="text-[16px] tracking-tight font-poppins font-medium uppercase text-deep hover:text-primary-blue"
             >
               Careers
-            </Link>
+            </Link> */}
 
             <Link
               href="/about"
