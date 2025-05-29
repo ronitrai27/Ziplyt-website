@@ -26,7 +26,6 @@ export default function WaitlistBar() {
   const [isPending, startTransition] = useTransition();
 
   useEffect(() => {
-    // Get the footer element from the DOM
     footerRef.current = document.querySelector('footer');
 
     if (!footerRef.current) return;
