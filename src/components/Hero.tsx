@@ -1,9 +1,8 @@
-"use client";
+// "use client";
 import React from "react";
 import Image from "next/image";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
-// import AppDownload from "@/lib/app-download";
-// import { SparklesCore } from "./ui/sparkels";
+import { LuAward, LuZap, LuSparkle } from "react-icons/lu";
 import { BiSolidQuoteSingleLeft } from "react-icons/bi";
 const Hero = () => {
   // ANIMATED TOOLTIP ->
@@ -51,20 +50,47 @@ const Hero = () => {
       <div className="flex flex-col min-[1000px]:flex-row gap-4">
         {/* LEFT CONTENT */}
 
-        <div className="min-[1000px]:w-[55%] w-full">
+        <main className="min-[1000px]:w-[55%] w-full">
           {/* MAIN HEAD + slogan */}
           <div className="mt-12 min-[1024]:px-2 text-deep">
-            <h1 className="font-poppins text-[40px] min-[1200px]:text-[46px] tracking-normal font-medium capitalize leading-snug  max-[999px]:text-center    text-balance">
-              <span className="bg-moving-gradient text-white px-3 rounded-bl-3xl rounded-tr-3xl min-[1200px]:text-[50px] text-[48px] max-[425px]:text-[42px]">
+            <h1 className="font-poppins text-[40px] min-[1200px]:text-[50px] tracking-tight font-medium capitalize leading-snug  max-[999px]:text-center  text-balance">
+              <span className="bg-moving-gradient text-white px-3 rounded-bl-3xl rounded-tr-3xl min-[1200px]:text-[56px] text-[48px] max-[425px]:text-[42px]">
                 Revolutionize
               </span>{" "}
               Home Services <br className="br-800-999" /> with Ziplyt
               <br />
-              <span className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-inter italic text-[42px]">
-                Fast & Transparent
-              </span>
             </h1>
-            <h3 className="font-inter text-[24px] font-light tracking-tight mt-5 max-[999px]:text-center leading-tight text-light text-balance">
+            {/* ICONS */}
+            <div className="flex flex-wrap items-center justify-center w-full gap-3 sm:gap-5 my-5 min-[1000px]:justify-start">
+              <div className="flex items-center gap-3 bg-primary-blue px-3 py-[6px] rounded-full w-fit">
+                <div className="bg-white w-6 h-6 rounded-full flex items-center justify-center">
+                  <LuZap className="text-primary-blue" size={20} />
+                </div>
+                <p className="italic font-quicksand text-[16px] font-medium text-white">
+                  Instant
+                </p>
+              </div>
+              {/* 2 */}
+              <div className="flex items-center gap-3 bg-primary-blue px-3 py-[6px] rounded-full w-fit">
+                <div className="bg-white w-6 h-6 rounded-full flex items-center justify-center">
+                  <LuAward className="text-primary-blue" size={20} />
+                </div>
+                <p className="italic font-quicksand text-[16px] font-medium text-white tracking-tight">
+                  Rewardable
+                </p>
+              </div>
+              {/* 3 */}
+              <div className="flex items-center gap-3 bg-light/30 backdrop-blur-lg px-3 py-[6px] rounded-full w-fit">
+                <div className="bg-white w-6 h-6 rounded-full flex items-center justify-center">
+                  <LuSparkle className="text-deep" size={20} />
+                </div>
+                <p className="italic font-quicksand text-[16px] font-medium text-black tracking-tight">
+                  Transparent
+                </p>
+              </div>
+            </div>
+
+            <h3 className="font-inter text-[20px] font-light tracking-tight max-[999px]:mt-10 mt-5 max-[999px]:text-center leading-tight text-light text-balance max-[400px]px-5 px-10">
               Say goodbye to waiting, Welcome to instant Home Solutions{" "}
               <span className="font-poppins font-medium tracking-tight text-deep">
                 under 10 mintues.
@@ -81,8 +107,8 @@ const Hero = () => {
             </p>
           </div>
           {/* SMALL TEXT FOR COMMING SOON */}
-          <h2 className="flex items-center min-[1000px]:justify-start justify-center mt-10 font-inter text-[16px] tracking-tight font-bold text-deep">
-            Coming soon on{" "}
+          <h2 className="flex items-center min-[1000px]:justify-start justify-center mt-10 font-poppins text-[18px] font-medium text-deep">
+            Coming soon on...
           </h2>
 
           {/* MAX 1000PX TABLET CTA */}
@@ -107,22 +133,21 @@ const Hero = () => {
               </p>
             </div>
           </div>
-        </div>
+        </main>
+
         {/* ----------------------------------------------- */}
         {/* RIGHT CONTENT */}
         <div className="min-[1000px]:w-[45%] w-full relative">
-          {/* <h1 className="max-[999px]:hidden flex font-poppins bg-gray-100/30 px-4 py-1 w-fit text-[14px] font-medium mx-auto min-[1000px]:text-deep text-light mt-5 skew-x-12">
-            Expereince the breakthrough
-          </h1> */}
           {/* MAX-999 H1  */}
           <div className="max-[999px]:flex hidden items-center justify-center gap-5 max-[430px]:gap-1 mt-4">
             <hr className="border-b-[.5px] border-light/30 w-[10%]" />
-            <h1 className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-inter text-[16px] font-medium max-[430px]:text-[14px]">
+            <h3 className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-inter text-[16px] font-medium max-[430px]:text-[14px]">
               EXPEREINCE THE BREAKTHROUGH
-            </h1>
+            </h3>
             <hr className="border-b-[.5px] border-light/30 w-[10%] " />
           </div>
-          <div className="relative">
+
+          <div className="relative ">
             <Image
               src="/heroimg4.png"
               alt=""
@@ -140,7 +165,7 @@ const Hero = () => {
               <div className=" flex items-center gap-2 max-w-[14rem] bg-white rounded-xl py-2 px-1">
                 <Image
                   src="/test7.png"
-                  alt=""
+                  alt="hero-image"
                   height={40}
                   width={40}
                   className="rounded-full bg-deep self-start"
@@ -155,7 +180,7 @@ const Hero = () => {
                 </h3>
                 <Image
                   src="/heroimage3.jpg"
-                  alt=""
+                  alt="hero-image"
                   height={40}
                   width={40}
                   className="rounded-full bg-deep self-start"
@@ -208,12 +233,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-//  <SparklesCore
-//             background="transparent"
-//             minSize={0.4}
-//             maxSize={1}
-//             particleDensity={1200}
-//             className="w-[200px] h-[40px] mx-auto -mt-5"
-//             particleColor="#005EFF"
-//           /> *

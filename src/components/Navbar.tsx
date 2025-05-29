@@ -30,19 +30,21 @@ const Navbar = () => {
     <header
       className={`z-50 top-0 left-1/2 -translate-x-1/2 transition-[padding,margin,width,background,box-shadow,transform] duration-500 ease-in-out ${
         isSticky
-          ? "fixed bg-white/30 backdrop-blur-md my-6 shadow-md py-3 px-4 w-[80%] rounded-xl"
+          ? "fixed bg-gray-200/30 backdrop-blur-md my-6 shadow-md py-3 px-4 w-[80%] rounded-full"
           : "relative bg-transparent py-3 px-5 w-full"
       }`}
     >
       <div className="flex items-center justify-between">
         {/* LOGO */}
-        <h1
-          className={`font-main font-bold tracking-tight transition-all duration-300 ${
-            isSticky ? "text-[22px]" : "text-[28px]"
-          }`}
-        >
-          Ziplyt
-        </h1>
+        <Link href="/">
+          <h1
+            className={`font-main font-bold tracking-tight transition-all duration-300 ${
+              isSticky ? "text-[22px]" : "text-[28px]"
+            }`}
+          >
+            Ziplyt
+          </h1>
+        </Link>
 
         {/* NAV LINKS (Desktop) */}
         <nav className="hidden min-[820px]:inline-flex gap-6 items-center font-inter text-[17px] font-light tracking-tight text-light">
@@ -101,9 +103,11 @@ const Navbar = () => {
             >
               <X size={28} />
             </button>
-            <h1 className="text-[28px] font-main font-bold tracking-tight">
-              Ziplyt
-            </h1>
+            <Link href="/">
+              <h1 className="text-[28px] font-main font-bold tracking-tight">
+                Ziplyt
+              </h1>
+            </Link>
             <Link
               href="/reachus"
               onClick={() => setIsMenuOpen(false)}
@@ -121,7 +125,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              href="#"
+              href="/about"
               onClick={() => setIsMenuOpen(false)}
               className="text-[16px] tracking-tight font-poppins font-medium uppercase text-deep hover:text-primary-blue"
             >

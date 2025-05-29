@@ -41,7 +41,7 @@ export default function WaitlistBar() {
           placeholder="Enter your email"
           className="flex-grow outline-none bg-transparent text-sm font-inter placeholder:text-gray-400"
         />
-        <button className="text-white text-sm font-medium bg-primary-blue px-4 py-2 rounded-full hover:bg-blue-600 transition">
+        <button className="text-white text-sm font-medium bg-primary-blue px-4 py-2 rounded-full hover:bg-blue-600 transition whitespace-nowrap">
           Join Waitlist
         </button>
       </div>

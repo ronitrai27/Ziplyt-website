@@ -10,6 +10,7 @@
   --font-inter: "Inter", sans-serif;
   --font-roboto: "Roboto", sans-serif;
   --font-poppins: "Poppins", sans-serif;
+  --font-quicksand: "Quicksand", sans-serif;
    /* Colors */
   --color-primary-blue: oklch(0.55 0.2498 261.78); /* energetic blue, #005EFF */
   --color-deep: oklch(0.25 0.0494 261.49);/* deep color	#202E47 */
@@ -108,10 +109,10 @@ box-shadow: 18px -9px 30px -24px rgba(66, 68, 90, 1);
 
   @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3); /* Tailwind blue-500 */
+    box-shadow: 0 0 8px rgba(59, 131, 246, 0.089); /* Tailwind blue-500 */
   }
   50% {
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+    box-shadow: 0 0 12px rgba(59, 131, 246, 0.253);
   }
 }
 

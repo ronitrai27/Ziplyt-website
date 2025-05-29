@@ -1,11 +1,11 @@
 import React from "react";
-import Image from "next/image";
 import { ShieldCheck, AlarmClock, Banknote } from "lucide-react";
+import ServicesCarousel from "./Carousel";
 const Feature = () => {
   return (
     <section className="container py-4 px-4 min-[1000px]:mt-10" id="features">
       <main>
-        <h4 className="text-center font-inter text-[20px] tracking-tighter font-light text-light">
+        <h4 className="text-center font-inter text-[20px] tracking-tighter font-semibold text-light/50">
           WHY CHOOSE US ?
         </h4>
         <h1 className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-poppins text-[42px] font-medium text-center tracking-tighter text-balance leading-snug mb-8">
@@ -52,81 +52,8 @@ const Feature = () => {
           </div>
         </div>
 
-        {/*  WOMAN */}
-        <div className="flex min-[820px]:flex-row flex-col items-center gap-10 px-8 my-6">
-          {/* image */}
-          <div className="relative">
-            <div className="bg-primary-blue w-[20rem] h-[20rem] rounded-3xl feature-shadow"></div>
-            <Image
-              src="/woman.jpg"
-              alt="woman"
-              width={300}
-              height={300}
-              className="absolute top-10 right-10 object-cover rounded-lg"
-            />
-          </div>
-          {/* text */}
-          <div className="w-full text-center  space-y-2">
-            <h2 className="text-[24px] min-[800px]:text-[28px] font-medium font-poppins text-deep leading-snug tracking-tighter">
-              When Service Feels Like a Smile
-            </h2>
-            <p className="text-[18px] min-[800px]:text-[20px] text-light text-balance font-inter tracking-tight leading-snug">
-              At Ziplyt, we go beyond just getting the job done — we bring joy,
-              ease, and peace of mind to your doorstep. Trusted pros,
-              hassle-free bookings, and smiles all around.
-            </p>
-          </div>
-        </div>
-
-        {/* WORKER */}
-        <div className="flex max-[820px]:hidden flex-row items-center gap-10 px-8">
-          {/* text */}
-          <div className="w-full text-center  space-y-2">
-            <h2 className="text-[24px] min-[800px]:text-[28px] font-medium font-poppins text-deep leading-snug tracking-tighter">
-              Speed That Surprises You
-            </h2>
-            <p className="text-[18px] min-[800px]:text-[20px] text-light text-balance font-inter tracking-tight leading-snug">
-              From booking to done — experience hassle-free service that’s fast,
-              efficient, and right at your doorstep in minutes.
-            </p>
-          </div>
-          {/* Image */}
-          <div className="relative">
-            <div className="bg-primary-blue w-[20rem] h-[20rem] rounded-3xl feature-shadow"></div>
-            <Image
-              src="/painter.jpg"
-              alt="woman"
-              width={300}
-              height={300}
-              className="absolute top-10 left-10 object-cover rounded-lg "
-            />
-          </div>
-        </div>
-
-        {/* WORKER MOBILE  */}
-        <div className="min-[820px]:hidden flex flex-col items-center gap-10 px-8">
-          {/* Image */}
-          <div className="relative">
-            <div className="bg-primary-blue w-[20rem] h-[20rem] rounded-3xl feature-shadow"></div>
-            <Image
-              src="/painter.jpg"
-              alt="woman"
-              width={300}
-              height={300}
-              className="absolute top-10 left-10 object-cover rounded-lg "
-            />
-          </div>
-          {/* text */}
-          <div className="w-full text-center  space-y-2">
-            <h2 className="text-[24px] min-[500px]:text-[28px] font-medium font-poppins text-deep leading-snug tracking-tighter">
-              Speed That Surprises You
-            </h2>
-            <p className="text-[18px] min-[800px]:text-[20px] text-light text-balance font-inter tracking-tight leading-snug">
-              From booking to done — experience hassle-free service that’s fast,
-              efficient, and right at your doorstep in minutes.
-            </p>
-          </div>
-        </div>
+        {/* CAROUSEL */}
+        <ServicesCarousel />
       </main>
     </section>
   );

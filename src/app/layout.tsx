@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Roboto, Open_Sans, Poppins } from "next/font/google";
+import { Inter, Roboto, Open_Sans, Poppins, Quicksand } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Configure fonts
 const openSans = Open_Sans({
@@ -28,13 +29,16 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
 });
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  variable: "--font-quicksand",
+});
 
 // Extended metadata for SEO
 export const metadata: Metadata = {
   title: "Ziplyt – Book Trusted Local Workers Easily",
   description:
     "Ziplyt, Indias's first online home service app that let you book verified skilled local workers in no time, say goodbye to waiting , welcom instant solution.",
-  // viewport: "width=device-width, initial-scale=1",
   keywords: [
     "Ziplyt",
     "book local workers",
@@ -73,12 +77,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans.variable} ${inter.variable} ${roboto.variable} ${poppins.variable} antialiased`}
+        className={`${openSans.variable} ${inter.variable} ${roboto.variable} ${poppins.variable} ${quicksand.variable} antialiased`}
       >
         {/* <Navbar /> */}
         {children}
         <Footer />
-        <SpeedInsights />
+        <GoogleAnalytics gaId="G-HBQZ9SX1KW" />
+        {/* <SpeedInsights /> */}
       </body>
     </html>
   );
