@@ -157,7 +157,7 @@ export default function ReachUsPage() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">
                     Message Sent!
                   </h3>
-                  <p className="text-white mb-6">
+                  <p className="text-gray-600 font-inter font-medium mb-6">
                     Thank you for reaching out. We&apos;ll get back to you
                     shortly.
                   </p>
