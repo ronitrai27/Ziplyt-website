@@ -138,6 +138,7 @@ const Hero = () => {
         {/* ----------------------------------------------- */}
         {/* RIGHT CONTENT */}
         <div className="min-[1000px]:w-[45%] w-full relative">
+          <div className=" absolute max-[1000px]:hidden top-0 right-0 w-[100%] h-full bg-gradient-to-br from-primary-blue via-blue-400 to-primary-blue rounded-tr-[50px] rounded-bl-[50px] rounded-l-md"></div>
           {/* MAX-999 H1  */}
           <div className="max-[999px]:flex hidden items-center justify-center gap-5 max-[430px]:gap-1 mt-4">
             <hr className="border-b-[.5px] border-light/30 w-[10%]" />
