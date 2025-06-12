@@ -123,7 +123,7 @@ const Footer = () => {
                 <li className="flex flex-col sm:flex-row gap-1">
                   <span className="block text-gray-400">Email:</span>
                   <a href="mailto:ziplyt.ind@gmail.com" className="text-white">
-                    ziplyt.ind@gmail.com
+                    ronit@ziplyt.com
                   </a>
                 </li>
                 <li className="flex flex-col sm:flex-row gap-1">
