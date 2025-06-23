@@ -1,9 +1,13 @@
 import React from "react";
 import { Eye, ShieldCheck, Wallet } from "lucide-react";
 import { NumberTicker } from "@/components/magicui/number-ticker";
+
 const LogoTicker = () => {
   return (
-    <section className="bg-white w-full py-5 px-4 mt-10 min-[1000px]:mb-10">
+    <section className="bg-white w-full py-5 px-4 max-[1000px]:mt-10 min-[1000px]:mb-10">
+      <h4 className="text-center font-inter text-[20px] tracking-tighter font-semibold text-light/50 mb-2">
+        WHY CHOOSE US ?
+      </h4>
       <main className="hidden min-[1000px]:flex items-center gap-5 justify-evenly">
         {/* BOX 1 */}
         <div className="flex flex-col min-w-[12rem] max-w-[20rem] p-2 rounded-md">

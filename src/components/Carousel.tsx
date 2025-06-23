@@ -141,6 +141,9 @@ export default function ServicesCarousel() {
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-12">
       <div className="mb-12">
+        <h4 className="text-center font-inter text-[20px] tracking-tighter font-semibold text-light/50">
+          STAR SERVICES
+        </h4>
         <h1 className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-poppins mb-4 text-[42px] font-medium tracking-tight leading-tight min-[820px]:text-left text-center">
           Browse Our Popular Services
         </h1>

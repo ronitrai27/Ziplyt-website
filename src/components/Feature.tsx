@@ -6,7 +6,7 @@ const Feature = () => {
     <section className="container py-4 px-4 min-[1000px]:mt-10" id="features">
       <main>
         <h4 className="text-center font-inter text-[20px] tracking-tighter font-semibold text-light/50">
-          WHY CHOOSE US ?
+          FEATURES
         </h4>
         <h1 className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-poppins text-[42px] font-medium text-center tracking-tighter text-balance leading-snug mb-8">
           Speed You Crave. Trust You Deserve.

@@ -31,7 +31,7 @@ const Navbar = () => {
       className={`z-50 top-0 left-1/2 -translate-x-1/2 transition-[padding,margin,width,background,box-shadow,transform] duration-500 ease-in-out ${
         isSticky
           ? "fixed bg-gray-200/30 backdrop-blur-md my-6 shadow-md py-3 px-4 w-[80%] rounded-full"
-          : "relative bg-transparent py-3 px-5 w-full"
+          : "relative bg-transparent py-3 px-5 min-[800px]:px-12 w-full"
       }`}
     >
       <div className="flex items-center justify-between">
@@ -47,7 +47,7 @@ const Navbar = () => {
         </Link>
 
         {/* NAV LINKS (Desktop) */}
-        <nav className="hidden min-[820px]:inline-flex gap-6 items-center font-inter text-[17px] font-light tracking-tight text-light">
+        <nav className="hidden min-[820px]:inline-flex gap-6 items-center font-inter text-[17px] font-light tracking-tight text-gray-600">
           <Link href="/reachus" className="hover:text-deep">
             Reach us
           </Link>
@@ -58,6 +58,14 @@ const Navbar = () => {
           <span className="w-2 h-2 bg-deep rounded-full"></span>
           <Link href="/about" className="hover:text-deep">
             About company
+          </Link>
+          <span className="w-2 h-2 bg-deep rounded-full"></span>
+          <Link href="#" className="hover:text-deep">
+            Features
+          </Link>
+          <span className="w-2 h-2 bg-deep rounded-full"></span>
+          <Link href="#" className="hover:text-deep">
+            Testimonials
           </Link>
         </nav>
 

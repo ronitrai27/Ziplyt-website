@@ -38,11 +38,14 @@ const BookingSteps = () => {
         </div>
 
         {/* TEXT + STEPS */}
-        <div className="flex flex-col items-center gap-6 text-center">
-          <h1 className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-poppins text-[38px] font-medium tracking-tight">
+        <div className="flex flex-col items-center  text-center">
+          <h4 className="text-center font-inter text-[20px] tracking-tighter font-semibold text-light/50">
+            HOW TO BOOK
+          </h4>
+          <h1 className="bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text] font-poppins text-[38px] font-medium tracking-tight mb-2">
             3 Simple Steps To Book
           </h1>
-          <p className="text-light font-inter text-[20px] tracking-tight text-balance leading-snug max-w-xl">
+          <p className="text-light font-inter text-[20px] tracking-tight text-balance leading-snug max-w-xl mb-3">
             Ziply offers full transparent way to choose your desired worker
             according to your budget. Review their profile and book easily.
           </p>

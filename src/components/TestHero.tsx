@@ -1,118 +1,110 @@
 import React from "react";
-import Image from "next/image";
-import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
+import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 import { LuAward, LuZap, LuSparkle } from "react-icons/lu";
 import { BiSolidQuoteSingleLeft } from "react-icons/bi";
+import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
+import Image from "next/image";
+const TestHero = () => {
+  // ANIMATED TOOLTIP ->
+  const people = [
+    {
+      id: 1,
+      name: "John Doe",
+      designation: "Software Engineer",
+      image: "/test1.png",
+    },
+    {
+      id: 2,
+      name: "Robert Johnson",
+      designation: "Product Manager",
+      image: "/test2.png",
+    },
+    {
+      id: 3,
+      name: "Jane Smith",
+      designation: "Data Scientist",
+      image: "/test3.png",
+    },
+    {
+      id: 4,
+      name: "Emily Davis",
+      designation: "UX Designer",
+      image: "/test4.png",
+    },
+    {
+      id: 5,
+      name: "Tyler Durden",
+      designation: "Soap Developer",
+      image: "/test5.png",
+    },
+    {
+      id: 6,
+      name: "Dora",
+      designation: "The Explorer",
+      image: "/test6.png",
+    },
+  ];
 
-// ANIMATED TOOLTIP ->
-const people = [
-  {
-    id: 1,
-    name: "John Doe",
-    designation: "Software Engineer",
-    image: "/test1.png",
-  },
-  {
-    id: 2,
-    name: "Robert Johnson",
-    designation: "Product Manager",
-    image: "/test2.png",
-  },
-  {
-    id: 3,
-    name: "Jane Smith",
-    designation: "Data Scientist",
-    image: "/test3.png",
-  },
-  {
-    id: 4,
-    name: "Emily Davis",
-    designation: "UX Designer",
-    image: "/test4.png",
-  },
-  {
-    id: 5,
-    name: "Tyler Durden",
-    designation: "Soap Developer",
-    image: "/test5.png",
-  },
-  {
-    id: 6,
-    name: "Dora",
-    designation: "The Explorer",
-    image: "/test6.png",
-  },
-];
-
-const Hero = () => {
   return (
-    <section className="min-h-[93vh] w-full min-[1024]:py-6 min-[820]:py-4 py-3 px-4 min-[1200px]:px-8 container">
-      <div className="flex flex-col min-[1000px]:flex-row gap-4">
+    <section className="min-h-screen w-full p-6">
+      <main className="flex flex-col min-[1000px]:flex-row min-[1000px]:gap-4 gap-8 py-6 px-2 max-w-[1280px] mx-auto">
         {/* LEFT CONTENT */}
-
-        <main className="min-[1000px]:w-[55%] w-full">
-          {/* MAIN HEAD + slogan */}
-          <div className="mt-12 min-[1024]:px-2 text-deep">
-            <h1 className="font-sora text-[40px] min-[1200px]:text-[50px] tracking-tight font-medium capitalize leading-snug  max-[999px]:text-center  text-balance">
-              <span className="bg-moving-gradient text-white px-3 rounded-bl-3xl rounded-tr-3xl min-[1200px]:text-[56px] text-[48px] max-[425px]:text-[42px] font-poppins">
-                Revolutionize
-              </span>{" "}
-              Home Services <br className="br-800-999" /> with Ziplyt
-              <br />
-            </h1>
-            {/* ICONS */}
-            <div className="flex flex-wrap items-center justify-center w-full gap-3 sm:gap-5 my-5 min-[1000px]:justify-start">
-              <div className="flex items-center gap-3 bg-primary-blue px-3 py-[6px] rounded-full w-fit">
-                <div className="bg-white w-6 h-6 rounded-full flex items-center justify-center">
-                  <LuZap className="text-primary-blue" size={20} />
-                </div>
-                <p className="italic font-quicksand text-[16px] font-medium text-white">
-                  Instant
-                </p>
+        <div className="w-full min-[1000px]:w-[55%] flex flex-col gap-4 ">
+          <h1 className=" tracking-tight font-sora font-semibold min-[600px]:text-[48px] text-[42px] max-[800px]:text-center leading-tight text-deep">
+            <span className="font-inter bg-moving-gradient text-white px-3 rounded-bl-3xl rounded-tr-3xl">
+              Effortless
+            </span>{" "}
+            Home Service <br /> at your fingertips
+          </h1>
+          {/* ICONS */}
+          <div className="flex flex-wrap items-center justify-center w-full gap-3 sm:gap-5 my-5 min-[1000px]:justify-start">
+            <div className="flex items-center gap-3 bg-primary-blue px-3 py-[6px] rounded-full w-fit">
+              <div className="bg-white w-6 h-6 rounded-full flex items-center justify-center">
+                <LuZap className="text-primary-blue" size={20} />
               </div>
-              {/* 2 */}
-              <div className="flex items-center gap-3 bg-primary-blue px-3 py-[6px] rounded-full w-fit">
-                <div className="bg-white w-6 h-6 rounded-full flex items-center justify-center">
-                  <LuAward className="text-primary-blue" size={20} />
-                </div>
-                <p className="italic font-quicksand text-[16px] font-medium text-white tracking-tight">
-                  Rewardable
-                </p>
-              </div>
-              {/* 3 */}
-              <div className="flex items-center gap-3 bg-light/30 backdrop-blur-lg px-3 py-[6px] rounded-full w-fit">
-                <div className="bg-white w-6 h-6 rounded-full flex items-center justify-center">
-                  <LuSparkle className="text-deep" size={20} />
-                </div>
-                <p className="italic font-quicksand text-[16px] font-medium text-black tracking-tight">
-                  Transparent
-                </p>
-              </div>
+              <p className="italic font-quicksand text-[16px] font-medium text-white">
+                Instant
+              </p>
             </div>
-
-            <h3 className="font-inter text-[20px] font-light tracking-tight max-[999px]:mt-10 mt-5 max-[999px]:text-center leading-tight text-light text-balance max-[400px]px-5 px-10">
-              Say goodbye to waiting, Welcome to instant Home Solutions{" "}
-              <span className="font-poppins font-medium tracking-tight text-deep">
-                under 10 mintues.
-              </span>
+            {/* 2 */}
+            <div className="flex items-center gap-3 bg-primary-blue px-3 py-[6px] rounded-full w-fit">
+              <div className="bg-white w-6 h-6 rounded-full flex items-center justify-center">
+                <LuAward className="text-primary-blue" size={20} />
+              </div>
+              <p className="italic font-quicksand text-[16px] font-medium text-white tracking-tight">
+                Rewardable
+              </p>
+            </div>
+            {/* 3 */}
+            <div className="flex items-center gap-3 bg-light/30 backdrop-blur-lg px-3 py-[6px] rounded-full w-fit">
+              <div className="bg-white w-6 h-6 rounded-full flex items-center justify-center">
+                <LuSparkle className="text-deep" size={20} />
+              </div>
+              <p className="italic font-quicksand text-[16px] font-medium text-black tracking-tight">
+                Transparent
+              </p>
+            </div>
+          </div>
+          {/* Text */}
+          <div className="flex flex-col gap-1 max-[800px]:max-w-[600px] mx-auto">
+            <RiDoubleQuotesL size={24} className="text-gray-400 self-start" />
+            <h3 className=" font-inter text-[20px] text-gray-600 tracking-tight leading-snug max-[1000px]:text-center ">
+              No more waiting Days for unreliable workers. Get verified local
+              professionals instantly. No drama, no worries - from emergencies
+              to maintenance, booking was never this easy Skip the wait. Welcome
+              instant solutions.
             </h3>
+            <RiDoubleQuotesR
+              size={24}
+              className="text-gray-400 self-end mr-10"
+            />
           </div>
-          {/* TOOLTIP  */}
-          <div className="mt-12 flex gap-6 items-center max-[999px]:justify-center">
-            <div className="flex flex-row items-center justify-center">
-              <AnimatedTooltip items={people} />
-            </div>
-            <p className="text-[16px] font-poppins font-light text-light">
-              Trusted by Many People.
-            </p>
-          </div>
-          {/* SMALL TEXT FOR COMMING SOON */}
-          <h2 className="flex items-center min-[1000px]:justify-start justify-center mt-10 font-poppins text-[18px] font-medium text-deep">
-            Coming soon on...
-          </h2>
+          {/* CTA */}
+          <p className="text-center font-sora text-black font-medium text-[20px]">
+            Comming Soon ...
+          </p>
 
-          {/* MAX 1000PX TABLET CTA */}
-          <div className="flex items-center min-[1000px]:justify-start justify-center w-full mt-3 gap-5">
+          <div className="flex items-center justify-center w-full mt-1 gap-5">
             {/* APPLE */}
             <div className="bg-deep px-4 py-3 rounded-lg flex items-center gap-2 shadow-md">
               <Image src="/apple-logo.png" alt="apple" width={25} height={25} />
@@ -133,9 +125,17 @@ const Hero = () => {
               </p>
             </div>
           </div>
-        </main>
 
-        {/* ----------------------------------------------- */}
+          {/* TOOLTIP  */}
+          <div className=" mt-5 flex gap-6 items-center justify-center">
+            <div className="flex flex-row items-center justify-center">
+              <AnimatedTooltip items={people} />
+            </div>
+            <p className="text-[16px] font-poppins font-light text-light">
+              Trusted by Many People.
+            </p>
+          </div>
+        </div>
         {/* RIGHT CONTENT */}
         <div className="min-[1000px]:w-[45%] w-full relative">
           {/* MAX-999 H1  */}
@@ -158,8 +158,8 @@ const Hero = () => {
             />
 
             {/* 1ND */}
-            <div className="absolute max-[500px]:hidden -top-8 min-[1000px]:right-0 right-16  bg-light/30 backdrop-blur-md p-2 rounded-lg blue-shadow flex flex-col gap-2">
-              <h1 className="text-[16px] font-poppins text-black font-medium capitalize tracking-tighter">
+            <div className="absolute max-[500px]:hidden -top-8 min-[1000px]:right-0 right-16  bg-primary-blue backdrop-blur-md p-2 rounded-lg blue-shadow flex flex-col gap-2">
+              <h1 className="text-[14px] font-inter text-white font-medium capitalize tracking-tighter">
                 Urgency ? We got you.
               </h1>
               <div className=" flex items-center gap-2 max-w-[14rem] bg-white rounded-xl py-2 px-1">
@@ -227,9 +227,9 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </section>
   );
 };
 
-export default Hero;
+export default TestHero;
