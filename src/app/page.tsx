@@ -18,7 +18,6 @@ export default function Home() {
 
       <LogoTicker />
       <Feature />
-
       <BookingSteps />
       <Services />
       <Testimonial />
