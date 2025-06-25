@@ -95,7 +95,7 @@ const Services = () => {
             opacity: h1Opacity,
             y: h1Y,
           }}
-          className="uppercase font-poppins text-center text-[42px] text-deep font-medium tracking-tight mb-4"
+          className="uppercase font-poppins text-center text-[42px] font-medium tracking-tight mb-2 bg-[linear-gradient(to_right,#1E2A44,#2B3A5A,#005EFF,#4DA8FF)] text-transparent bg-clip-text [-webkit-background-clip:text]"
         >
           Your Tasks, Our Expertise
         </motion.h1>
@@ -105,7 +105,7 @@ const Services = () => {
             opacity: h3Opacity,
             y: h3Y,
           }}
-          className="text-balance font-inter text-light tracking-tighter text-[20px] text-center mb-16"
+          className="text-balance font-inter text-light tracking-tighter text-[20px] text-center mb-14"
         >
           You got problem? We got ears. Services for all your needs.
         </motion.h3>
@@ -133,7 +133,7 @@ const Services = () => {
               y: categoriesY,
             }}
           >
-            <h4 className="text-xl font-medium text-deep mb-6 tracking-tight">
+            <h4 className="text-xl font-medium text-deep mb-6 tracking-tight font-inter text-center">
               Browse by category
             </h4>
             <div className="grid grid-cols-2 gap-4 md:gap-5">

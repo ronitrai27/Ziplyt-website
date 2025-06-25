@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-// import Hero from "@/components/Hero";
 import LogoTicker from "@/components/LogoTicker";
 import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonial";
@@ -14,8 +13,6 @@ export default function Home() {
     <div className="relative overflow-hidden">
       <Navbar />
       <TestHero />
-      {/* <Hero /> */}
-
       <LogoTicker />
       <Feature />
       <BookingSteps />
