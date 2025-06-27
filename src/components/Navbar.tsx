@@ -60,11 +60,11 @@ const Navbar = () => {
             About company
           </Link>
           <span className="w-2 h-2 bg-deep rounded-full"></span>
-          <Link href="#" className="hover:text-deep">
+          <Link href="#features" className="hover:text-deep">
             Features
           </Link>
           <span className="w-2 h-2 bg-deep rounded-full"></span>
-          <Link href="#" className="hover:text-deep">
+          <Link href="#testimonials" className="hover:text-deep">
             Testimonials
           </Link>
         </nav>

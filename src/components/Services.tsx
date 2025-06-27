@@ -133,7 +133,7 @@ const Services = () => {
               y: categoriesY,
             }}
           >
-            <h4 className="text-xl font-medium text-deep mb-6 tracking-tight font-inter text-center">
+            <h4 className="text-xl font-medium text-deep mb-6 tracking-tight font-inter text-center min-[1280px]:-ml-20">
               Browse by category
             </h4>
             <div className="grid grid-cols-2 gap-4 md:gap-5">

@@ -100,7 +100,7 @@ const Footer = () => {
               </h2>
               <ul className='space-y-3 text-[18px] text-gray-300'>
                 <li>
-                  <Link href='/#'>
+                  <Link href='/about'>
                     <span className='hover:text-white transition cursor-pointer'>
                       About Us
                     </span>
